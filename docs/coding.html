@@ -55,10 +55,10 @@ runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
 runBtn.textParams.p.isSelectable = true;
 </pre></div>
 </div>
-<p>また、コンテナ型のブロックが対象の場合は、以下のように内部にウィジェットを埋め込むことが出来ます。
-これを利用すると、デザイナーがデザインツールで作成した画面パーツをFlutter Widgetに変換し、それを簡単に埋め込めます。</p>
+<p>また、構造体の <a class="reference internal" href="classes/structure/block.html#block"><span class="std std-ref">block</span></a> を使うと、以下のように内部にウィジェットを埋め込むことが出来ます。
+これを利用すると、デザイナーがデザインツールで作成した画面パーツをFlutter Widgetに変換すれば、それを簡単に埋め込めます。</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
-b.replaceID(ここには子要素を置き換えたいコンテナのIDを記載します。, Widgetをここに入れます);
+b.replaceID(ここには子要素を置き換えたいblockのIDを記載します。, Widgetをここに入れます);
 Widget compiledWidget = b.build(context);
 </pre></div>
 </div>

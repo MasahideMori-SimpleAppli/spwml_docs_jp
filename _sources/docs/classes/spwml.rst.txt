@@ -104,21 +104,26 @@ elevation (double, px)
 -----------------------
 要素のz軸の相対位置をずらします。
 
-bgColor (String)
+bgColor (String, #AARRGGBB)
 ---------------------
-背景色です。#AARRGGBBで指定します。
+背景色です。
 
-borderColor (String)
+borderColor (String, #AARRGGBB)
 -----------------------
-ボーダーラインのカラーです。#AARRGGBBで指定します。
+ボーダーラインのカラーです。
 
-borderWidth (double, x)
+borderWidth (double, px)
 -------------------------
 ボーダーラインの幅です。
 
 borderRadius (double, px)
 --------------------------
 ボーダーの丸め量です。
+
+borderShape (String)
+--------------------------
+ボーダーの形状です。rectangle、またはcircleを指定します。
+btn、card、radioBtn、checkbox、table、tableRowでは無効です。
 
 rTL (double, px)
 ---------------------

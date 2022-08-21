@@ -8,10 +8,21 @@
 
 構造体（要素の容器）
 ==================
-:ref:`block<block>`
+* :ref:`block<block>`
+* :ref:`card<col>`
+* :ref:`col<col>`
+* :ref:`expTile<expTile>`
+* :ref:`row<row>`
+* :ref:`scroll<scroll>`
+* :ref:`span<span>`
+* :ref:`stack<stack>`
+* :ref:`tableRow<tableRow>`
+* :ref:`table<table>`
+* :ref:`wrap<wrap>`
 
 テキスト
 ==================
+* :ref:`text<text>`
 
 ボタン（ユーザーアクションに反応する要素）
 ======================================
