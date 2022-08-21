@@ -1,0 +1,8 @@
+======================================
+権利表示
+======================================
+
+Copyright notice（著作権表示）
+------------------------------
+DartやFlutterは米国Google社の商標です。
+The “Dart” name and “Flutter” name are trademarks of Google LLC.

@@ -1,0 +1,12 @@
+======================================
+SpWMLの導入方法
+======================================
+
+以下からFlutterアプリケーション用のパッケージがダウンロードできます。
+https://pub.dev/packages/simple_widget_markup
+
+以下のインストール方法、及びインポート方法を参照してください。
+https://pub.dev/packages/simple_widget_markup/install
+
+Flutterプロジェクト内で以下のテストコードを実行すると動きがより分かりやすいと思います。
+https://pub.dev/packages/simple_widget_markup/example

@@ -1,0 +1,21 @@
+======================================
+エディタを使ってみよう
+======================================
+
+SpWMLで書いた簡易エディタがあるので、ぜひ色々試してみてください。
+
+これはテスト表示用の簡素な作りになっているので、
+他のコードエディタで作ったコードを貼り付けてUIをテスト・微調整するという使い方が一番良いと思います。
+
+https://simple-widget-markup-editor.web.app/
+
+SpWMLの記法について
+====================
+SpWMLは、以下のSimple Block Markup Laungage(SBML)の派生形としての構造を持ちます。
+
+https://github.com/MasahideMori-SimpleAppli/simple_block_markup_language/blob/main/README_JA.md
+
+SBMLがXMLとするとSpWMLはHTMLのようなもので、SBMLの方がより自由度が高い言語です。
+書き方についてはSBMLと同様で、型名などにtextやh1など、HTMLに近いものが事前に定義してあります。
+
+詳しい型名やパラメータなどはこのホームページの :ref:`「クラスと機能」<classes_and_methods>` を参照してください。
