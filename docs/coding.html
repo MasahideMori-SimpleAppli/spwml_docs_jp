@@ -37,6 +37,8 @@
             
   <section id="spwml">
 <h1>SpWMLをコードから操作する<a class="headerlink" href="#spwml" title="Permalink to this heading">¶</a></h1>
+<section id="id1">
+<h2>基本操作<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>以下のサンプルを確認いただくと分かりやすいです。
 <a class="reference external" href="https://pub.dev/packages/simple_widget_markup/example">https://pub.dev/packages/simple_widget_markup/example</a></p>
 <p>上記サンプル中のSpWMLのパラメータには、「id」というものがあります。
@@ -55,7 +57,11 @@ runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
 runBtn.textParams.p.isSelectable = true;
 </pre></div>
 </div>
-<p>また、構造体の <a class="reference internal" href="classes/structure/block.html#block"><span class="std std-ref">block</span></a> を使うと、以下のように内部にウィジェットを埋め込むことが出来ます。
+</section>
+<hr class="docutils" />
+<section id="flutter">
+<h2>Flutterウィジェットとの連携<a class="headerlink" href="#flutter" title="Permalink to this heading">¶</a></h2>
+<p>構造体の <a class="reference internal" href="classes/structure/block.html#block"><span class="std std-ref">block</span></a> を使うと、以下のように内部にウィジェットを埋め込むことが出来ます。
 これを利用すると、デザイナーがデザインツールで作成した画面パーツをFlutter Widgetに変換すれば、それを簡単に埋め込めます。</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
 b.replaceID(ここには子要素を置き換えたいblockのIDを記載します。, Widgetをここに入れます);
@@ -63,6 +69,7 @@ Widget compiledWidget = b.build(context);
 </pre></div>
 </div>
 <p>既存のコードを再利用したり、静的な言語で書くのが難しい特殊な画面パーツを埋め込む場合はこのようにしてください。</p>
+</section>
 </section>
 
 
@@ -86,7 +93,11 @@ Widget compiledWidget = b.build(context);
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">SpWMLとは？</a></li>
 <li class="toctree-l1"><a class="reference internal" href="try_editor.html">エディタを使ってみよう</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">SpWMLの導入方法</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">SpWMLをコードから操作する</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SpWMLをコードから操作する</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">基本操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flutter">Flutterウィジェットとの連携</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="classes_and_methods.html">クラスと機能</a></li>
 <li class="toctree-l1"><a class="reference internal" href="copyright_notice.html">権利表示</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">付録（開発者の雑記）</a></li>

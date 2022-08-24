@@ -39,14 +39,17 @@
 <h2>SpWMLによる記法<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>直接記載できないスーパークラスです。</p>
 </section>
+<hr class="docutils" />
 <section id="id2">
 <h2>解説<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>全てのSpWML要素のスーパークラスです。</p>
 </section>
+<hr class="docutils" />
 <section id="dart">
 <h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
 <p>外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。</p>
 </section>
+<hr class="docutils" />
 <section id="id3">
 <h2>変数（Dart）<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
@@ -60,130 +63,43 @@
 <li><p>[style] : ビルダーなどに与えられたフォントスタイルの参照.</p></li>
 </ul>
 </section>
+<hr class="docutils" />
 <section id="id4">
 <h2>利用可能パラメータ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
-<section id="id-int">
-<h3>id(int)<a class="headerlink" href="#id-int" title="Permalink to this heading">¶</a></h3>
-<p>intで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。</p>
+<ul class="simple">
+<li><p>id(int)。intで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。</p></li>
+<li><p>h(double, px)。heightとも書けます。この要素の高さです。</p></li>
+<li><p>w(double, px)。widthとも書けます。この要素の幅です。</p></li>
+<li><p>weight(double)。画面におけるこの要素の比です。他の要素が比を持たない場合、これを持つ要素が残りの幅全てを占めます。</p></li>
+<li><p>minH (double, px)。minHeightとも書けます。最小高さです。条件によっては無視されます。</p></li>
+<li><p>minW (double, px)。minWidthとも書けます。最小幅です。条件によっては無視されます。</p></li>
+<li><p>maxH (double, px)。maxHeightとも書けます。最大高さです。条件によっては無視されます。</p></li>
+<li><p>maxW (double, px)。maxWidthとも書けます。最大幅です。条件によっては無視されます。</p></li>
+<li><p>mL (double, px)。mLeftとも書けます。左マージンです。</p></li>
+<li><p>mT (double, px)。mTopとも書けます。上マージンです。</p></li>
+<li><p>mR (double, px)。mRightとも書けます。右マージンです。</p></li>
+<li><p>mB (double, px)。mBottomとも書けます。下マージンです。</p></li>
+<li><p>pL (double, px)。pLeftとも書けます。左パディングです。</p></li>
+<li><p>pT (double, px)。pTopとも書けます。上パディングです。</p></li>
+<li><p>pR (double, px)。pRightとも書けます。右パディングです。</p></li>
+<li><p>pB (double, px)。pBottomとも書けます。下パディングです。</p></li>
+<li><p>shiftX (double, px)。要素のx軸の相対位置をずらします。</p></li>
+<li><p>shiftY (double, px)。要素のy軸の相対位置をずらします。</p></li>
+<li><p>elevation (double, px)。要素のz軸の相対位置をずらします。</p></li>
+<li><p>bgColor (String, #AARRGGBB)。背景色です。</p></li>
+<li><p>borderColor (String, #AARRGGBB)。ボーダーラインのカラーです。</p></li>
+<li><p>borderWidth (double, px)。ボーダーラインの幅です。</p></li>
+<li><p>borderRadius (double, px)。ボーダーの丸め量です。</p></li>
+<li><p>borderShape (String)。ボーダーの形状です。rectangle、またはcircleを指定します。btn、card、radioBtn、checkbox、table、tableRowでは無効です。</p></li>
+<li><p>rTL (double, px)。左上のボーダーの丸め量です。</p></li>
+<li><p>rTR (double, px)。右上のボーダーの丸め量です。</p></li>
+<li><p>rBL (double, px)。左下のボーダーの丸め量です。</p></li>
+<li><p>rBR (double, px)。右下のボーダーの丸め量です。</p></li>
+<li><p>ellipticalX (double, px)。x軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p></li>
+<li><p>ellipticalY (double, px)。y軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p></li>
+</ul>
 </section>
-<section id="h-double-px">
-<h3>h(double, px)<a class="headerlink" href="#h-double-px" title="Permalink to this heading">¶</a></h3>
-<p>heightとも書けます。</p>
-</section>
-<section id="w-double-px">
-<h3>w(double, px)<a class="headerlink" href="#w-double-px" title="Permalink to this heading">¶</a></h3>
-<p>widthとも書けます。</p>
-</section>
-<section id="weight-double">
-<h3>weight(double)<a class="headerlink" href="#weight-double" title="Permalink to this heading">¶</a></h3>
-<p>画面におけるこの要素の比です。他の要素が比を持たない場合、これを持つ要素が残りの幅全てを占めます。</p>
-</section>
-<section id="minh-double-px">
-<h3>minH (double, px)<a class="headerlink" href="#minh-double-px" title="Permalink to this heading">¶</a></h3>
-<p>minHeightとも書けます。最小高さです。条件によっては無視されます。</p>
-</section>
-<section id="minw-double-px">
-<h3>minW (double, px)<a class="headerlink" href="#minw-double-px" title="Permalink to this heading">¶</a></h3>
-<p>minWidthとも書けます。最小幅です。条件によっては無視されます。</p>
-</section>
-<section id="maxh-double-px">
-<h3>maxH (double, px)<a class="headerlink" href="#maxh-double-px" title="Permalink to this heading">¶</a></h3>
-<p>maxHeightとも書けます。最大高さです。条件によっては無視されます。</p>
-</section>
-<section id="maxw-double-px">
-<h3>maxW (double, px)<a class="headerlink" href="#maxw-double-px" title="Permalink to this heading">¶</a></h3>
-<p>maxWidthとも書けます。最大幅です。条件によっては無視されます。</p>
-</section>
-<section id="ml-double-px">
-<h3>mL (double, px)<a class="headerlink" href="#ml-double-px" title="Permalink to this heading">¶</a></h3>
-<p>mLeftとも書けます。左マージンです。</p>
-</section>
-<section id="mt-double-px">
-<h3>mT (double, px)<a class="headerlink" href="#mt-double-px" title="Permalink to this heading">¶</a></h3>
-<p>mTopとも書けます。上マージンです。</p>
-</section>
-<section id="mr-double-px">
-<h3>mR (double, px)<a class="headerlink" href="#mr-double-px" title="Permalink to this heading">¶</a></h3>
-<p>mRightとも書けます。右マージンです。</p>
-</section>
-<section id="mb-double-px">
-<h3>mB (double, px)<a class="headerlink" href="#mb-double-px" title="Permalink to this heading">¶</a></h3>
-<p>mBottomとも書けます。下マージンです。</p>
-</section>
-<section id="pl-double-px">
-<h3>pL (double, px)<a class="headerlink" href="#pl-double-px" title="Permalink to this heading">¶</a></h3>
-<p>pLeftとも書けます。左パディングです。</p>
-</section>
-<section id="pt-double-px">
-<h3>pT (double, px)<a class="headerlink" href="#pt-double-px" title="Permalink to this heading">¶</a></h3>
-<p>pTopとも書けます。上パディングです。</p>
-</section>
-<section id="pr-double-px">
-<h3>pR (double, px)<a class="headerlink" href="#pr-double-px" title="Permalink to this heading">¶</a></h3>
-<p>pRightとも書けます。右パディングです。</p>
-</section>
-<section id="pb-double-px">
-<h3>pB (double, px)<a class="headerlink" href="#pb-double-px" title="Permalink to this heading">¶</a></h3>
-<p>pBottomとも書けます。下パディングです。</p>
-</section>
-<section id="shiftx-double-px">
-<h3>shiftX (double, px)<a class="headerlink" href="#shiftx-double-px" title="Permalink to this heading">¶</a></h3>
-<p>要素のx軸の相対位置をずらします。</p>
-</section>
-<section id="shifty-double-px">
-<h3>shiftY (double, px)<a class="headerlink" href="#shifty-double-px" title="Permalink to this heading">¶</a></h3>
-<p>要素のy軸の相対位置をずらします。</p>
-</section>
-<section id="elevation-double-px">
-<h3>elevation (double, px)<a class="headerlink" href="#elevation-double-px" title="Permalink to this heading">¶</a></h3>
-<p>要素のz軸の相対位置をずらします。</p>
-</section>
-<section id="bgcolor-string-aarrggbb">
-<h3>bgColor (String, #AARRGGBB)<a class="headerlink" href="#bgcolor-string-aarrggbb" title="Permalink to this heading">¶</a></h3>
-<p>背景色です。</p>
-</section>
-<section id="bordercolor-string-aarrggbb">
-<h3>borderColor (String, #AARRGGBB)<a class="headerlink" href="#bordercolor-string-aarrggbb" title="Permalink to this heading">¶</a></h3>
-<p>ボーダーラインのカラーです。</p>
-</section>
-<section id="borderwidth-double-px">
-<h3>borderWidth (double, px)<a class="headerlink" href="#borderwidth-double-px" title="Permalink to this heading">¶</a></h3>
-<p>ボーダーラインの幅です。</p>
-</section>
-<section id="borderradius-double-px">
-<h3>borderRadius (double, px)<a class="headerlink" href="#borderradius-double-px" title="Permalink to this heading">¶</a></h3>
-<p>ボーダーの丸め量です。</p>
-</section>
-<section id="bordershape-string">
-<h3>borderShape (String)<a class="headerlink" href="#bordershape-string" title="Permalink to this heading">¶</a></h3>
-<p>ボーダーの形状です。rectangle、またはcircleを指定します。
-btn、card、radioBtn、checkbox、table、tableRowでは無効です。</p>
-</section>
-<section id="rtl-double-px">
-<h3>rTL (double, px)<a class="headerlink" href="#rtl-double-px" title="Permalink to this heading">¶</a></h3>
-<p>左上のボーダーの丸め量です。</p>
-</section>
-<section id="rtr-double-px">
-<h3>rTR (double, px)<a class="headerlink" href="#rtr-double-px" title="Permalink to this heading">¶</a></h3>
-<p>右上のボーダーの丸め量です。</p>
-</section>
-<section id="rbl-double-px">
-<h3>rBL (double, px)<a class="headerlink" href="#rbl-double-px" title="Permalink to this heading">¶</a></h3>
-<p>左下のボーダーの丸め量です。</p>
-</section>
-<section id="rbr-double-px">
-<h3>rBR (double, px)<a class="headerlink" href="#rbr-double-px" title="Permalink to this heading">¶</a></h3>
-<p>右下のボーダーの丸め量です。</p>
-</section>
-<section id="ellipticalx-double-px">
-<h3>ellipticalX (double, px)<a class="headerlink" href="#ellipticalx-double-px" title="Permalink to this heading">¶</a></h3>
-<p>x軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p>
-</section>
-<section id="ellipticaly-double-px">
-<h3>ellipticalY (double, px)<a class="headerlink" href="#ellipticaly-double-px" title="Permalink to this heading">¶</a></h3>
-<p>y軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p>
-</section>
-</section>
+<hr class="docutils" />
 <section id="id5">
 <h2>親クラス<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <p>StatelessWidget(Flutterのクラスです)</p>

@@ -37,12 +37,17 @@
 <span id="table"></span><h1>TableElement<a class="headerlink" href="#tableelement" title="Permalink to this heading">¶</a></h1>
 <section id="spwml">
 <h2>SpWMLによる記法<a class="headerlink" href="#spwml" title="Permalink to this heading">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(table)
-+(子ブロック)
-+(子ブロック)
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(table, hNum:2)
++(tr)
+++(孫ブロック)
+++(孫ブロック)
++(tr)
+++(孫ブロック)
+++(孫ブロック)
 </pre></div>
 </div>
 </section>
+<hr class="docutils" />
 <section id="id1">
 <h2>解説<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>複数の子ブロックを持つブロックです。
@@ -50,10 +55,12 @@
 パラメータのうち、hNumは必須パラメータであり、必ず指定する必要があります。
 また、子ブロックには通常trを使用します。</p>
 </section>
+<hr class="docutils" />
 <section id="dart">
 <h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
 <p>外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。</p>
 </section>
+<hr class="docutils" />
 <section id="id2">
 <h2>変数（Dart）<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
@@ -62,22 +69,18 @@
 <li><p>[elParams] : FlutterのTableウィジェット相当のパラメータを持つ変数です。</p></li>
 </ul>
 </section>
+<hr class="docutils" />
 <section id="id3">
 <h2>利用可能パラメータ<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ</p></li>
+<li><p>hNum (int)。テーブルの水平方向の要素数の指定です。このパラメータは必須です。</p></li>
+<li><p>color (String, #AARRGGBB)。色の指定です。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
 <section id="id4">
-<h3><a class="reference internal" href="../spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
-</section>
-<section id="hnum-int">
-<h3>hNum (int)<a class="headerlink" href="#hnum-int" title="Permalink to this heading">¶</a></h3>
-<p>テーブルの水平方向の要素数の指定です。このパラメータは必須です。</p>
-</section>
-<section id="color-string-aarrggbb">
-<h3>color (String, #AARRGGBB)<a class="headerlink" href="#color-string-aarrggbb" title="Permalink to this heading">¶</a></h3>
-<p>色の指定です。</p>
-</section>
-</section>
-<section id="id5">
-<h2>スーパークラス<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<h2>スーパークラス<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="../spwml.html#spwml"><span class="std std-ref">SpWMLElement</span></a></p>
 </section>
 </section>

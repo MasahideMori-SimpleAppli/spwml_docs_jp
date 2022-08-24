@@ -2,6 +2,9 @@
 SpWMLをコードから操作する
 ======================================
 
+基本操作
+===============
+
 以下のサンプルを確認いただくと分かりやすいです。
 https://pub.dev/packages/simple_widget_markup/example
 
@@ -25,7 +28,12 @@ https://pub.dev/packages/simple_widget_markup/example
    runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
    runBtn.textParams.p.isSelectable = true;
 
-また、構造体の :ref:`block<block>` を使うと、以下のように内部にウィジェットを埋め込むことが出来ます。
+----
+
+Flutterウィジェットとの連携
+============================
+
+構造体の :ref:`block<block>` を使うと、以下のように内部にウィジェットを埋め込むことが出来ます。
 これを利用すると、デザイナーがデザインツールで作成した画面パーツをFlutter Widgetに変換すれば、それを簡単に埋め込めます。
 
 .. code-block:: none
