@@ -51,7 +51,14 @@
 <hr class="docutils" />
 <section id="dart">
 <h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
-<p>外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。</p>
+<section id="builder">
+<h3>Builderからの呼び出し<a class="headerlink" href="#builder" title="Permalink to this heading">¶</a></h3>
+<p>Builderの機能でreplaceIDというメソッドがあり、これを使うことで子ブロックをウィジェットに差し替えることができます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(scroll, id:1)&quot;);
+builder.replaceID(1, Text(&quot;abc&quot;));
+</pre></div>
+</div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="id2">
@@ -59,7 +66,7 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="../spwml.html#spwml"><span class="std std-ref">共通</span></a> 変数</p></li>
 <li><p>[child] : 単一の子ウィジェットです。</p></li>
-<li><p>[elParams] : FlutterのScrollウィジェット相当のパラメータを持つ変数です。</p></li>
+<li><p>[elParams] : Flutterの <a class="reference external" href="https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html">SingleChildScrollViewクラス</a> 相当のパラメータを持つ変数です。</p></li>
 </ul>
 </section>
 <hr class="docutils" />

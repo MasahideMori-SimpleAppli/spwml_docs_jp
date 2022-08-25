@@ -9,7 +9,7 @@
 構造体（要素の容器）
 ==================
 * :ref:`block<block>`
-* :ref:`card<col>`
+* :ref:`card<card>`
 * :ref:`col<col>`
 * :ref:`expTile<expTile>`
 * :ref:`row<row>`
@@ -39,6 +39,10 @@
 
 ボタン（タッチ操作に反応する要素）
 ======================================
+* :ref:`checkbox<checkbox>`
+* :ref:`dropdownBtn<dropdownBtn>`
+* :ref:`popupMenuBtn<popupMenuBtn>`
+* :ref:`radioBtn<radioBtn>`
 * :ref:`switchBtn<switchBtn>`
 
 その他

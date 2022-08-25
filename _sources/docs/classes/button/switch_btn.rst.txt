@@ -46,7 +46,7 @@ setSwitchValue
 変数（Dart）
 ===============
 * :ref:`共通<spwml>` 変数
-* [elParams] : Flutterの `Switchウィジェット <https://api.flutter.dev/flutter/material/Switch-class.html>`__ 相当のパラメータを持つ変数です。
+* [elParams] : Flutterの `Switchクラス <https://api.flutter.dev/flutter/material/Switch-class.html>`__ 相当のパラメータを持つ変数です。
 
 ----
 

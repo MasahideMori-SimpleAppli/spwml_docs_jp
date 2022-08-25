@@ -22,7 +22,15 @@ SpWMLによる記法
 
 機能（Dart）
 ===============
-外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。
+
+Builderからの呼び出し
+----------------------
+Builderの機能でreplaceIDというメソッドがあり、これを使うことで子ブロックをウィジェットに差し替えることができます。
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(block, id:1)");
+    builder.replaceID(1, Text("abc"));
 
 ----
 
