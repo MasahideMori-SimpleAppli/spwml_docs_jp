@@ -24,20 +24,16 @@ SpWMLによる記法
 
 機能（Dart）
 ===============
-
-Builderからの呼び出し
-----------------------
-Builderの機能でreplaceUnderStructureというメソッドがあり、これを使うことで子ブロック配列をウィジェットに差し替えることができます。
-.. code-block:: none
-   
-    SpWMLBuilder builder = SpWMLBuilder("(row, id:1)");
-    builder.replaceUnderStructure(1, [Text("abc"), Text("def")]);
+子ブロックの操作
+-----------------
+:ref:`親クラス<multi_child>` の機能
 
 ----
 
 変数（Dart）
 ===============
 * :ref:`共通<spwml>` 変数
+* :ref:`親<multi_child>` 変数
 * [children] : 複数の子ウィジェットです。
 * [elParams] : Flutterの `Rowクラス <https://api.flutter.dev/flutter/widgets/Row-class.html>`__ 相当のパラメータを持つ変数です。
 
@@ -46,6 +42,7 @@ Builderの機能でreplaceUnderStructureというメソッドがあり、これ�
 利用可能パラメータ
 ==================
 * :ref:`共通<spwml>` パラメータ
+* :ref:`親<multi_child>` パラメータ
 * vAlign (String)。垂直方向の揃えです。left、start、center、right、end、top、bottomのいずれかを指定します。
 * hAlign (String)。水平方向の揃えです。left、start、center、right、end、top、bottomのいずれかを指定します。
 
@@ -53,4 +50,4 @@ Builderの機能でreplaceUnderStructureというメソッドがあり、これ�
 
 スーパークラス
 ==============
-:ref:`spwml`
+:ref:`multi_child`

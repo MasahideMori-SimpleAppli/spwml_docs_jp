@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>SpWMLElement &#8212; SpWML Docs  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="spwmlelement">
+<span id="spwml"></span><h1>SpWMLElement<a class="headerlink" href="#spwmlelement" title="Permalink to this heading">¶</a></h1>
+<section id="id1">
+<h2>SpWMLによる記法<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>直接記載できないスーパークラスです。</p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>解説<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>全てのSpWML要素のスーパークラスです。</p>
+</section>
+<hr class="docutils" />
+<section id="dart">
+<h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
+<p>外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。</p>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h2>変数（Dart）<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>[serial] : 配列番号.</p></li>
+<li><p>[type] : 型.</p></li>
+<li><p>[param] : SBMLによってパースされた後、Flutter用に変換されたパラメータ.</p></li>
+<li><p>[spwmlParams] : SpWMLでユーザーが記述したパラメータ.</p></li>
+<li><p>[parentSerial] : 親ブロックの配列番号.</p></li>
+<li><p>[lineStart] : このブロックの開始行番号.</p></li>
+<li><p>[lineEnd] : このブロックの終了行番号.</p></li>
+<li><p>[style] : ビルダーなどに与えられたフォントスタイルの参照.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h2>利用可能パラメータ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>id(int)。intで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。</p></li>
+<li><p>h(double, px)。heightとも書けます。この要素の高さです。</p></li>
+<li><p>w(double, px)。widthとも書けます。この要素の幅です。</p></li>
+<li><p>weight(double)。画面におけるこの要素の比です。他の要素が比を持たない場合、これを持つ要素が残りの幅全てを占めます。</p></li>
+<li><p>minH (double, px)。minHeightとも書けます。最小高さです。条件によっては無視されます。</p></li>
+<li><p>minW (double, px)。minWidthとも書けます。最小幅です。条件によっては無視されます。</p></li>
+<li><p>maxH (double, px)。maxHeightとも書けます。最大高さです。条件によっては無視されます。</p></li>
+<li><p>maxW (double, px)。maxWidthとも書けます。最大幅です。条件によっては無視されます。</p></li>
+<li><p>mL (double, px)。mLeftとも書けます。左マージンです。</p></li>
+<li><p>mT (double, px)。mTopとも書けます。上マージンです。</p></li>
+<li><p>mR (double, px)。mRightとも書けます。右マージンです。</p></li>
+<li><p>mB (double, px)。mBottomとも書けます。下マージンです。</p></li>
+<li><p>pL (double, px)。pLeftとも書けます。左パディングです。</p></li>
+<li><p>pT (double, px)。pTopとも書けます。上パディングです。</p></li>
+<li><p>pR (double, px)。pRightとも書けます。右パディングです。</p></li>
+<li><p>pB (double, px)。pBottomとも書けます。下パディングです。</p></li>
+<li><p>shiftX (double, px)。要素のx軸の相対位置をずらします。</p></li>
+<li><p>shiftY (double, px)。要素のy軸の相対位置をずらします。</p></li>
+<li><p>elevation (double, px)。要素のz軸の相対位置をずらします。</p></li>
+<li><p>bgColor (String, #AARRGGBB)。背景色です。</p></li>
+<li><p>borderColor (String, #AARRGGBB)。ボーダーラインのカラーです。</p></li>
+<li><p>borderWidth (double, px)。ボーダーラインの幅です。</p></li>
+<li><p>borderRadius (double, px)。ボーダーの丸め量です。</p></li>
+<li><p>borderShape (String)。ボーダーの形状です。rectangle、またはcircleを指定します。btn、card、radioBtn、checkbox、table、tableRowでは無効です。</p></li>
+<li><p>rTL (double, px)。左上のボーダーの丸め量です。</p></li>
+<li><p>rTR (double, px)。右上のボーダーの丸め量です。</p></li>
+<li><p>rBL (double, px)。左下のボーダーの丸め量です。</p></li>
+<li><p>rBR (double, px)。右下のボーダーの丸め量です。</p></li>
+<li><p>ellipticalX (double, px)。x軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p></li>
+<li><p>ellipticalY (double, px)。y軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h2>親クラス<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<p>StatelessWidget(Flutterのクラスです)</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">SpWML Docs</a></h1>
+
+
+
+
+
+
+
+
+<h3>ナビゲーション</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">SpWMLとは？</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../try_editor.html">エディタを使ってみよう</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">SpWMLの導入方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coding.html">SpWMLをコードから操作する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes_and_methods.html">クラスと機能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright_notice.html">権利表示</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix.html">付録（開発者の雑記）</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Masahide Mori.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/docs/classes/super/spwml.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

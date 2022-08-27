@@ -1,0 +1,46 @@
+:orphan:
+.. _img:
+======================================
+ImgElement
+======================================
+
+SpWMLによる記法
+===============
+
+.. code-block:: none
+   
+   (img)画像リソースのURI（URL）
+
+----
+
+解説
+===============
+子ブロックを持たない、画像を配置できるブロックです。
+
+----
+
+機能（Dart）
+===============
+外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。
+
+----
+
+変数（Dart）
+===============
+* :ref:`共通<spwml>` 変数
+* [elParams] : Flutterの `Imageクラス <https://api.flutter.dev/flutter/widgets/Image-class.html>`__ 相当のパラメータを持つ変数です。
+
+----
+
+利用可能パラメータ
+==================
+* :ref:`共通<spwml>` パラメータ
+* type (String)。リソースのロード元の指定です。networkとassetのどちらかを指定します。デフォルトのnetworkの場合はURLを与えるとそこから画像をダウンロードして表示しますが、CORSに注意してください。assetの場合はプロジェクトのassetフォルダ内の画像が使用されます。
+* fit (String)。この要素内に画像がどう収めるかを指定します。none、contain、cover、fitHeight、fitWidthのいずれかを指定します。
+* repeat (String)。画像のリピートの指定です。noRepeat、repeat、repeatX、repeatYのいずれかを指定します。repeatは縦横両方向、repeatXはX軸方向のみ、repeatYはY軸方向のみにリピートします。
+
+----
+
+スーパークラス
+==============
+:ref:`spwml`

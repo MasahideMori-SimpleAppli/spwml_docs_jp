@@ -1,0 +1,45 @@
+:orphan:
+.. _vline:
+======================================
+VLineElement
+======================================
+
+SpWMLによる記法
+===============
+
+.. code-block:: none
+   
+   (vline)
+
+----
+
+解説
+===============
+子ブロックを持たない、垂直方向の線を配置できるブロックです。
+
+----
+
+機能（Dart）
+===============
+外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。
+
+----
+
+変数（Dart）
+===============
+* :ref:`共通<spwml>` 変数
+* [elParams] : Flutterの `VerticalDividerクラス <https://api.flutter.dev/flutter/material/VerticalDivider-class.html>`__ 相当のパラメータを持つ変数です。
+
+----
+
+利用可能パラメータ
+==================
+* :ref:`共通<spwml>` パラメータ
+* thickness (double)。線の太さをpxで指定します。
+* color (String)。線の色を指定します。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+
+----
+
+スーパークラス
+==============
+:ref:`spwml`

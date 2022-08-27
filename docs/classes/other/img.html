@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; SpWML Docs  ドキュメント</title>
+    <title>ImgElement &#8212; SpWML Docs  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
@@ -33,7 +33,49 @@
 
           <div class="body" role="main">
             
-  
+  <section id="imgelement">
+<span id="img"></span><h1>ImgElement<a class="headerlink" href="#imgelement" title="Permalink to this heading">¶</a></h1>
+<section id="spwml">
+<h2>SpWMLによる記法<a class="headerlink" href="#spwml" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(img)画像リソースのURI（URL）
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>解説<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>子ブロックを持たない、画像を配置できるブロックです。</p>
+</section>
+<hr class="docutils" />
+<section id="dart">
+<h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
+<p>外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。</p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>変数（Dart）<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> 変数</p></li>
+<li><p>[elParams] : Flutterの <a class="reference external" href="https://api.flutter.dev/flutter/widgets/Image-class.html">Imageクラス</a> 相当のパラメータを持つ変数です。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h2>利用可能パラメータ<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ</p></li>
+<li><p>type (String)。リソースのロード元の指定です。networkとassetのどちらかを指定します。デフォルトのnetworkの場合はURLを与えるとそこから画像をダウンロードして表示しますが、CORSに注意してください。assetの場合はプロジェクトのassetフォルダ内の画像が使用されます。</p></li>
+<li><p>fit (String)。この要素内に画像がどう収めるかを指定します。none、contain、cover、fitHeight、fitWidthのいずれかを指定します。</p></li>
+<li><p>repeat (String)。画像のリピートの指定です。noRepeat、repeat、repeatX、repeatYのいずれかを指定します。repeatは縦横両方向、repeatXはX軸方向のみ、repeatYはY軸方向のみにリピートします。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h2>スーパークラス<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">SpWMLElement</span></a></p>
+</section>
+</section>
+
 
           </div>
           

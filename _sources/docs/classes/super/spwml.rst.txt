@@ -1,0 +1,75 @@
+:orphan:
+.. _spwml:
+======================================
+SpWMLElement
+======================================
+
+SpWMLによる記法
+===============
+直接記載できないスーパークラスです。
+
+----
+
+解説
+===============
+全てのSpWML要素のスーパークラスです。
+
+----
+
+機能（Dart）
+===============
+外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。
+
+----
+
+変数（Dart）
+===============
+* [serial] : 配列番号.
+* [type] : 型.
+* [param] : SBMLによってパースされた後、Flutter用に変換されたパラメータ.
+* [spwmlParams] : SpWMLでユーザーが記述したパラメータ.
+* [parentSerial] : 親ブロックの配列番号.
+* [lineStart] : このブロックの開始行番号.
+* [lineEnd] : このブロックの終了行番号.
+* [style] : ビルダーなどに与えられたフォントスタイルの参照.
+
+----
+
+利用可能パラメータ
+==================
+* id(int)。intで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。
+* h(double, px)。heightとも書けます。この要素の高さです。
+* w(double, px)。widthとも書けます。この要素の幅です。
+* weight(double)。画面におけるこの要素の比です。他の要素が比を持たない場合、これを持つ要素が残りの幅全てを占めます。
+* minH (double, px)。minHeightとも書けます。最小高さです。条件によっては無視されます。
+* minW (double, px)。minWidthとも書けます。最小幅です。条件によっては無視されます。
+* maxH (double, px)。maxHeightとも書けます。最大高さです。条件によっては無視されます。
+* maxW (double, px)。maxWidthとも書けます。最大幅です。条件によっては無視されます。
+* mL (double, px)。mLeftとも書けます。左マージンです。
+* mT (double, px)。mTopとも書けます。上マージンです。
+* mR (double, px)。mRightとも書けます。右マージンです。
+* mB (double, px)。mBottomとも書けます。下マージンです。
+* pL (double, px)。pLeftとも書けます。左パディングです。
+* pT (double, px)。pTopとも書けます。上パディングです。
+* pR (double, px)。pRightとも書けます。右パディングです。
+* pB (double, px)。pBottomとも書けます。下パディングです。
+* shiftX (double, px)。要素のx軸の相対位置をずらします。
+* shiftY (double, px)。要素のy軸の相対位置をずらします。
+* elevation (double, px)。要素のz軸の相対位置をずらします。
+* bgColor (String, #AARRGGBB)。背景色です。
+* borderColor (String, #AARRGGBB)。ボーダーラインのカラーです。
+* borderWidth (double, px)。ボーダーラインの幅です。
+* borderRadius (double, px)。ボーダーの丸め量です。
+* borderShape (String)。ボーダーの形状です。rectangle、またはcircleを指定します。btn、card、radioBtn、checkbox、table、tableRowでは無効です。
+* rTL (double, px)。左上のボーダーの丸め量です。
+* rTR (double, px)。右上のボーダーの丸め量です。
+* rBL (double, px)。左下のボーダーの丸め量です。
+* rBR (double, px)。右下のボーダーの丸め量です。
+* ellipticalX (double, px)。x軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。
+* ellipticalY (double, px)。y軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。
+
+----
+
+親クラス
+===============
+StatelessWidget(Flutterのクラスです)

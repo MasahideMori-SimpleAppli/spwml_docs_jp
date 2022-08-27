@@ -38,7 +38,7 @@ Builderの機能でreplaceIDというメソッドがあり、これを使うこ�
 変数（Dart）
 ===============
 * :ref:`共通<spwml>` 変数
-* [child] : 単一の子ウィジェットです。
+* :ref:`親<single_child>` 変数
 * [elParams] : Flutterの `SingleChildScrollViewクラス <https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html>`__ 相当のパラメータを持つ変数です。
 
 ----
@@ -46,6 +46,7 @@ Builderの機能でreplaceIDというメソッドがあり、これを使うこ�
 利用可能パラメータ
 ==================
 * :ref:`共通<spwml>` パラメータ
+* :ref:`親<single_child>` パラメータ
 * isPrimary (bool)。プライマリスクロールビューかどうかの指定です。複数のスクロールがある場合、２つ目以降はfalseを設定する必要があります。
 * axis (String)。スクロール方向の指定です。vertical、horizontalのいずれかを指定します。
 
@@ -53,4 +54,4 @@ Builderの機能でreplaceIDというメソッドがあり、これを使うこ�
 
 スーパークラス
 ==============
-:ref:`spwml`
+:ref:`single_child
