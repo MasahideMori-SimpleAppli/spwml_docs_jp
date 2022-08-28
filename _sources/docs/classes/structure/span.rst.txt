@@ -1,5 +1,6 @@
 :orphan:
 .. _span:
+
 ======================================
 SpanElement
 ======================================
@@ -17,6 +18,7 @@ SpWMLによる記法
 
 解説
 ===============
+
 複数の子ブロックを持つブロックです。内部の子ブロックは同じ行内要素となります。
 例えば、部分的に色が違うテキストなどを同一行に表示するために使います。
 
@@ -24,8 +26,10 @@ SpWMLによる記法
 
 機能（Dart）
 ===============
+
 子ブロックの操作
 -----------------
+
 :ref:`親クラス<multi_child_text>` の機能
 ただし、差し替えられるのはInlineSpanを実装したウィジェットのみです。これにはTextSpanやWidgetSpanなどがあります。
 
@@ -33,6 +37,7 @@ SpWMLによる記法
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * :ref:`親<multi_child_text>` 変数
 * [elParams] : Flutterの `TextSpanクラス <https://api.flutter.dev/flutter/painting/TextSpan-class.html>`__ 相当のパラメータを持つ変数です。
@@ -41,6 +46,7 @@ SpWMLによる記法
 
 利用可能パラメータ
 ==================
+
 * :ref:`共通<spwml>` パラメータ
 * :ref:`親<multi_child_text>` パラメータ
 * isSelectable (bool)。内部のテキストを選択出来るかどうかの指定です。
@@ -49,4 +55,5 @@ SpWMLによる記法
 
 スーパークラス
 ==============
+
 :ref:`multi_child_text`

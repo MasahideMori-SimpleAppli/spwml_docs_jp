@@ -1,5 +1,6 @@
 :orphan:
 .. _multi_child_text:
+
 ======================================
 MultiChildTextElement
 ======================================
@@ -13,6 +14,7 @@ SpWMLによる記法
 
 解説
 ===============
+
 子要素を複数持つSpWML要素のスーパークラスです。
 
 ----
@@ -22,6 +24,7 @@ SpWMLによる記法
 
 Builderからの呼び出し
 ----------------------
+
 Builderの機能でreplaceUnderStructureというメソッドがあり、これを使うことで子ブロック配列をウィジェットに差し替えることができます。
 .. code-block:: none
    
@@ -32,6 +35,7 @@ Builderの機能でreplaceUnderStructureというメソッドがあり、これ�
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * :ref:`親<text>` 変数
 * [children] : 子ウィジェット配列です。
@@ -40,6 +44,7 @@ Builderの機能でreplaceUnderStructureというメソッドがあり、これ�
 
 利用可能パラメータ
 ==================
+
 * :ref:`共通<spwml>` パラメータ
 * :ref:`親<text>` パラメータ
 
@@ -47,4 +52,5 @@ Builderの機能でreplaceUnderStructureというメソッドがあり、これ�
 
 スーパークラス
 ==============
+
 :ref:`text`

@@ -1,11 +1,12 @@
 :orphan:
 .. _ruby:
+
 ======================================
 RubyTextElement
 ======================================
 
 SpWMLによる記法
-===============
+=================
 
 .. code-block:: none
    
@@ -15,18 +16,52 @@ SpWMLによる記法
 
 解説
 ===============
+
 子ブロックを持たない、ルビ付きのテキストを設置できるブロックです。
 
 ----
 
 機能（Dart）
 ===============
-現在作成中です。
+
+親クラスの機能
+-----------------
+
+:ref:`親クラス<text>` の機能が利用できます。
+
+Styleの取得
+--------------------
+
+SpWMLで設定されたルビのTextStyleを取得できます。
+
+.. code-block:: none
+   
+   TextStyle getRubyStyle()
+
+StrutStyleの取得
+--------------------
+
+SpWMLで設定されたルビのStrutStyleを取得できます。
+
+.. code-block:: none
+   
+   StrutStyle getRubyStrutStyle()
+
+Alignの取得
+--------------------
+
+SpWMLで設定されたルビのTextAlignを取得できます。
+
+.. code-block:: none
+   
+   TextAlign getRubyAlign()
+
 
 ----
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * :ref:`親<text>` 変数
 * [rubyParams] : Flutterの `Textクラス <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ 相当のパラメータに加えて、ルビ制御用のパラメータを持つ変数です。
@@ -34,14 +69,28 @@ SpWMLによる記法
 ----
 
 利用可能パラメータ
-==================
+====================
+
 * :ref:`共通<spwml>` パラメータ
 * :ref:`親<text>` パラメータ
-
-現在作成中です。
+* rubyFontName(String)。利用するフォント名です。フォントの変更にはFlutterプロジェクト側で設定が必要です。プロジェクトで設定したフォントのみを読み込めます。
+* rubySize(double)。フォントサイズを基準テキストに対する倍率で指定します。0.0～1.0の値を使用してください。
+* rubyFontWeight(String)。フォントの太さです。normal, regular, bold, thin, light, medium, black, w100～w900のいずれかを指定します。
+* rubyFontStyle(String)。書体の設定です。normal, italicのいずれかを指定します。
+* rubyColor(String)。色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* rubyBGColor(String)。テキスト背景色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* rubyDeco(String)。下線などのデコレーションの指定です。none, underline, overline, lineThroughのいずれかを指定します。
+* rubyDecoStyle(String)。デコレーションのスタイルです。solid, dotted, dashed, double, wavyのいずれかを指定します。
+* rubyDecoColor(String)色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* rubyDecoThickness(double)。デコレーションの線幅をpxで指定します。
+* rubyLetterSpacing(double)。文字間の隙間をpxで指定します。
+* rubyWordSpacing(double)。単語間の隙間をpxで指定します。
+* rubyAlign(String)。テキスト揃えです。left, center, right, justifyのいずれかを指定します。
+* rubyHeight(double)。テキストの高さを指定します。英語の場合は1.0で良いですが、日本語の場合は1.0～1.3の間で調整した方が良い場合があります。
 
 ----
 
 スーパークラス
-==============
+================
+
 :ref:`text`

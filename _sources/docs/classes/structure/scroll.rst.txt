@@ -1,5 +1,6 @@
 :orphan:
 .. _scroll:
+
 ======================================
 ScrollElement
 ======================================
@@ -16,6 +17,7 @@ SpWMLによる記法
 
 解説
 ===============
+
 単一の子ブロックを持つブロックです。
 内部の子ブロックのサイズが親ブロックのサイズを超える場合、スクロールできるようになります。
 
@@ -26,6 +28,7 @@ SpWMLによる記法
 
 Builderからの呼び出し
 ----------------------
+
 Builderの機能でreplaceIDというメソッドがあり、これを使うことで子ブロックをウィジェットに差し替えることができます。
 
 .. code-block:: none
@@ -37,6 +40,7 @@ Builderの機能でreplaceIDというメソッドがあり、これを使うこ�
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * :ref:`親<single_child>` 変数
 * [elParams] : Flutterの `SingleChildScrollViewクラス <https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html>`__ 相当のパラメータを持つ変数です。
@@ -45,6 +49,7 @@ Builderの機能でreplaceIDというメソッドがあり、これを使うこ�
 
 利用可能パラメータ
 ==================
+
 * :ref:`共通<spwml>` パラメータ
 * :ref:`親<single_child>` パラメータ
 * isPrimary (bool)。プライマリスクロールビューかどうかの指定です。複数のスクロールがある場合、２つ目以降はfalseを設定する必要があります。
@@ -54,4 +59,5 @@ Builderの機能でreplaceIDというメソッドがあり、これを使うこ�
 
 スーパークラス
 ==============
+
 :ref:`single_child

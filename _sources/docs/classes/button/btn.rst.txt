@@ -1,5 +1,6 @@
 :orphan:
 .. _btn:
+
 ======================================
 BtnElement
 ======================================
@@ -16,14 +17,17 @@ SpWMLによる記法
 
 解説
 ===============
+
 様々なボタンを配置できるブロックです。
 
 ----
 
 機能（Dart）
 ===============
+
 子ブロックの操作
 -----------------
+
 :ref:`親クラス<single_child_text>` の機能
 これはボタンがブロックタイプの時のみ効果があります。
 
@@ -31,14 +35,16 @@ SpWMLによる記法
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * :ref:`親<single_child_text>` 変数
-* [elParams] : Flutterの `Checkboxクラス <https://api.flutter.dev/flutter/material/Checkbox-class.html>`__ の使い勝手を向上するために調整を加えた変数を持っています。
+* [elParams] : Flutterの `TextButtonクラス <https://api.flutter.dev/flutter/material/TextButton-class.html>`__ の使い勝手を向上するために調整を加えた変数を持っています。btnは、テキスト以外のボタン的な動作をする要素についてもひとまとめに扱えます。
 
 ----
 
 利用可能パラメータ
 ====================
+
 * :ref:`共通<spwml>` パラメータ
 * :ref:`親<single_child_text>` パラメータ
 
@@ -48,4 +54,5 @@ SpWMLによる記法
 
 スーパークラス
 ==============
+
 :ref:`single_child_text`

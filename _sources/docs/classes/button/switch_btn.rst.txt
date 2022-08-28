@@ -1,5 +1,6 @@
 :orphan:
 .. _switchBtn:
+
 ======================================
 SwitchBtnElement
 ======================================
@@ -15,6 +16,7 @@ SpWMLによる記法
 
 解説
 ===============
+
 子ブロックを持たないブロックです。
 このブロックを配置した場所には、ON・OFFスイッチが設置されます。
 
@@ -25,6 +27,7 @@ SpWMLによる記法
 
 setCallback
 ---------------------
+
 スイッチがタップされたときのコールバックを設定します。
 コールバック関数の引数にはボタンの状態が渡されます。
 
@@ -34,6 +37,7 @@ setCallback
 
 setSwitchValue
 ---------------------
+
 スイッチの値を設定します。
 画面更新が必須であり、親ウィジェット内で引数を管理する必要があります。
 
@@ -45,6 +49,7 @@ setSwitchValue
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * [elParams] : Flutterの `Switchクラス <https://api.flutter.dev/flutter/material/Switch-class.html>`__ 相当のパラメータを持つ変数です。
 
@@ -52,6 +57,7 @@ setSwitchValue
 
 利用可能パラメータ
 ==================
+
 * :ref:`共通<spwml>` パラメータ
 * color (String, #AARRGGBB)。色の指定。
 
@@ -59,4 +65,5 @@ setSwitchValue
 
 スーパークラス
 ==============
+
 :ref:`spwml`

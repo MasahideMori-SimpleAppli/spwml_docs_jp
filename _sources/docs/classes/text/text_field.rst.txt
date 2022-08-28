@@ -1,5 +1,6 @@
 :orphan:
 .. _textField:
+
 ======================================
 TextFieldElement
 ======================================
@@ -17,18 +18,55 @@ SpWMLによる記法
 
 解説
 ===============
+
 子ブロックを持たない、テキスト入力を設置できるブロックです。
 
 ----
 
 機能（Dart）
 ===============
-現在作成中です。
+
+サーチアイコンのコールバック
+----------------------------
+
+入力がsearchモードの場合のボタンコールバックを設定します。
+
+.. code-block:: none
+   
+   void setSuffixCallback(Function(String inputText)? suffixCallback)
+
+入力完了時のコールバック
+----------------------------
+
+ユーザー入力完了時のコールバックを設定します。
+
+.. code-block:: none
+   
+   void setOnSubmitted(void Function(String)? onSubmitted)
+
+----------------------------
+
+
+入力テキストを保持するためのクラスを設定します。テキストはFlutterの標準的な仕様の通り、親ウィジェットで管理します。
+
+.. code-block:: none
+   
+   void setController(TextEditingController? controller)
+
+----------------------------
+
+
+フォーカスを設定します。
+
+.. code-block:: none
+   
+   void setFocusNode(FocusNode? focusNode)
 
 ----
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * :ref:`親<text>` 変数
 * [tfParams] : Flutterの `TextFieldクラス <https://api.flutter.dev/flutter/material/TextField-class.html>`__ 相当のパラメータに加えて、ルビ制御用のパラメータを持つ変数です。
@@ -37,13 +75,24 @@ SpWMLによる記法
 
 利用可能パラメータ
 ====================
-* :ref:`共通<spwml>` パラメータ
-* :ref:`親<text>` パラメータ
 
-現在作成中です。
+* :ref:`共通<spwml>` パラメータ
+* :ref:`親<text>` パラメータ。ただし、isSelectableは無効です。
+* labelText(String)。アニメーションで左上に移動する機能を持つヒントテキストです。
+* hint(String)。入力が空の場合に表示されるヒントテキストです。ただし、Flutterの既知の問題で、日本語で使用するとIMEの変換が壊れるバグがあるため、labelTextを使用してください。
+* type(String)。入力ボックスの形状の指定です。material, roundedのいずれかを指定します。
+* mode(String)。動作モードの指定です。normal, password, search, manualのいずれかを指定します。manualモードでは、SpWML での指定は無効となり、ユーザー設定値がそのまま反映されます。
+* iconNum(String)。アイコンの種類を `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ で指定します。
+* iconSize (double)。アイコンの大きさをpxで指定します。
+* iconColor (String)。アイコンの色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* suffixIconNum(String)。末尾アイコンの種類を `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ で指定します。
+* suffixIconSize(double)。末尾アイコンの大きさをpxで指定します。
+* suffixIconSplashRadius(double)。末尾アイコンのタップに対するアニメーション領域の大きさをpxで指定します。
+* suffixIconColor(String)。末尾アイコンの色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
 
 ----
 
 スーパークラス
-==============
+===============
+
 :ref:`text`

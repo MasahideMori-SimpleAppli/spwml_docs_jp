@@ -64,28 +64,70 @@
 <hr class="docutils" />
 <section id="dart">
 <h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
-<p>現在作成中です。</p>
+<section id="id2">
+<h3>テキストの変更<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<p>テキスト内容を変更できます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(このクラスの子クラスの型, id:1)&quot;);
+builder.replaceID(1, Text(&quot;abc&quot;));
+</pre></div>
+</div>
+</section>
+<section id="style">
+<h3>Styleの取得<a class="headerlink" href="#style" title="Permalink to this heading">¶</a></h3>
+<p>SpWMLで設定されたTextStyleを取得できます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TextStyle getStyle()
+</pre></div>
+</div>
+</section>
+<section id="strutstyle">
+<h3>StrutStyleの取得<a class="headerlink" href="#strutstyle" title="Permalink to this heading">¶</a></h3>
+<p>SpWMLで設定されたStrutStyleを取得できます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>StrutStyle getStrutStyle()
+</pre></div>
+</div>
+</section>
+<section id="align">
+<h3>Alignの取得<a class="headerlink" href="#align" title="Permalink to this heading">¶</a></h3>
+<p>SpWMLで設定されたTextAlignを取得できます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TextAlign getTextAlign()
+</pre></div>
+</div>
+</section>
 </section>
 <hr class="docutils" />
-<section id="id2">
-<h2>変数（Dart）<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<section id="id3">
+<h2>変数（Dart）<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="../spwml.html#spwml"><span class="std std-ref">共通</span></a> 変数</p></li>
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> 変数</p></li>
 <li><p>[textParams] : FlutterのTextウィジェット、及びSelectableText相当のパラメータを持つ変数です。</p></li>
 </ul>
 </section>
 <hr class="docutils" />
-<section id="id3">
-<h2>利用可能パラメータ<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<section id="id4">
+<h2>利用可能パラメータ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="../spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ</p></li>
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ</p></li>
+<li><p>isSelectable(bool)。trueの場合、テキストが選択できるようになります。menu以外では初期値はtrueです。</p></li>
+<li><p>fontName(String)。利用するフォント名です。フォントの変更にはFlutterプロジェクト側で設定が必要です。プロジェクトで設定したフォントのみを読み込めます。</p></li>
+<li><p>fontSize(double)。フォントサイズをpxで指定します。</p></li>
+<li><p>fontWeight(String)。フォントの太さです。normal, regular, bold, thin, light, medium, black, w100～w900のいずれかを指定します。</p></li>
+<li><p>fontStyle(String)。書体の設定です。normal, italicのいずれかを指定します。</p></li>
+<li><p>textColor(String)。色の指定です。#AARRGGBB表記、あるいは <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> の色をred[500]やredAccent[100]のような表記で扱えます。</p></li>
+<li><p>textBGColor(String)。テキスト背景色の指定です。#AARRGGBB表記、あるいは <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> の色をred[500]やredAccent[100]のような表記で扱えます。</p></li>
+<li><p>textDeco(String)。下線などのデコレーションの指定です。none, underline, overline, lineThroughのいずれかを指定します。</p></li>
+<li><p>textDecoStyle(String)。デコレーションのスタイルです。solid, dotted, dashed, double, wavyのいずれかを指定します。</p></li>
+<li><p>textDecoColor(String)色の指定です。#AARRGGBB表記、あるいは <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> の色をred[500]やredAccent[100]のような表記で扱えます。</p></li>
+<li><p>textDecoThickness(double)。デコレーションの線幅をpxで指定します。</p></li>
+<li><p>letterSpacing(double)。文字間の隙間をpxで指定します。</p></li>
+<li><p>wordSpacing(double)。単語間の隙間をpxで指定します。</p></li>
+<li><p>textAlign(String)。テキスト揃えです。left, center, right, justifyのいずれかを指定します。</p></li>
+<li><p>textHeight(double)。テキストの高さを指定します。英語の場合は1.0で良いですが、日本語の場合は1.0～1.3の間で調整した方が良い場合があります。</p></li>
 </ul>
-<p>現在作成中です。</p>
 </section>
 <hr class="docutils" />
-<section id="id4">
-<h2>スーパークラス<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
-<p><a class="reference internal" href="../spwml.html#spwml"><span class="std std-ref">SpWMLElement</span></a></p>
+<section id="id5">
+<h2>スーパークラス<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">SpWMLElement</span></a></p>
 </section>
 </section>
 

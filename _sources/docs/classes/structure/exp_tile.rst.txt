@@ -1,5 +1,6 @@
 :orphan:
 .. _expTile:
+
 ======================================
 ExpTileElement
 ======================================
@@ -17,6 +18,7 @@ SpWMLによる記法
 
 解説
 ===============
+
 複数の子ブロックを持つブロックです。
 内部の子ブロックは展開するタイル内のブロックになります。
 
@@ -24,14 +26,17 @@ SpWMLによる記法
 
 機能（Dart）
 ===============
+
 子ブロックの操作
 -----------------
+
 :ref:`親クラス<multi_child_text>` の機能
 
 ----
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * :ref:`親<multi_child_text>` 変数
 * [elParams] : Flutterの `ExpansionTileクラス <https://api.flutter.dev/flutter/material/ExpansionTile-class.html>`__ 相当のパラメータを持つ変数です。
@@ -40,6 +45,7 @@ SpWMLによる記法
 
 利用可能パラメータ
 ==================
+
 * :ref:`共通<spwml>` パラメータ
 * :ref:`親<multi_child_text>` パラメータ
 * iconNum (String)。 `マテリアルアイコンの 16 進数のアイコンナンバー <https://api.flutter.dev/flutter/material/Icons-class.html#constants>`__ です。
@@ -50,4 +56,5 @@ SpWMLによる記法
 
 スーパークラス
 ==============
+
 :ref:`multi_child_text`

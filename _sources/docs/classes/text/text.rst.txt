@@ -1,11 +1,12 @@
 :orphan:
 .. _text:
+
 ======================================
 TextElement
 ======================================
 
 SpWMLによる記法
-===============
+=================
 
 .. code-block:: none
    
@@ -28,6 +29,7 @@ SpWMLによる記法
 
 解説
 ===============
+
 子ブロックを持たない、テキスト要素を格納したブロックです。
 サイズや書式に様々なバリエーションがあります。
 また、textはbody1と同等の別名で、menuもbody1とほぼ同じですが、こちらはデフォルトで選択が無効です。
@@ -36,25 +38,77 @@ SpWMLによる記法
 
 機能（Dart）
 ===============
-現在作成中です。
+
+テキストの変更
+-----------------
+
+テキスト内容を変更できます。
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(このクラスの子クラスの型, id:1)");
+    builder.replaceID(1, Text("abc"));
+
+Styleの取得
+--------------------
+
+SpWMLで設定されたTextStyleを取得できます。
+
+.. code-block:: none
+   
+   TextStyle getStyle()
+
+StrutStyleの取得
+--------------------
+
+SpWMLで設定されたStrutStyleを取得できます。
+
+.. code-block:: none
+   
+   StrutStyle getStrutStyle()
+
+Alignの取得
+--------------------
+
+SpWMLで設定されたTextAlignを取得できます。
+
+.. code-block:: none
+   
+   TextAlign getTextAlign()
 
 ----
 
 変数（Dart）
 ===============
+
 * :ref:`共通<spwml>` 変数
 * [textParams] : FlutterのTextウィジェット、及びSelectableText相当のパラメータを持つ変数です。
 
 ----
 
 利用可能パラメータ
-==================
-* :ref:`共通<spwml>` パラメータ
+====================
 
-現在作成中です。
+* :ref:`共通<spwml>` パラメータ
+* isSelectable(bool)。trueの場合、テキストが選択できるようになります。menu以外では初期値はtrueです。
+* fontName(String)。利用するフォント名です。フォントの変更にはFlutterプロジェクト側で設定が必要です。プロジェクトで設定したフォントのみを読み込めます。
+* fontSize(double)。フォントサイズをpxで指定します。
+* fontWeight(String)。フォントの太さです。normal, regular, bold, thin, light, medium, black, w100～w900のいずれかを指定します。
+* fontStyle(String)。書体の設定です。normal, italicのいずれかを指定します。
+* textColor(String)。色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* textBGColor(String)。テキスト背景色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* textDeco(String)。下線などのデコレーションの指定です。none, underline, overline, lineThroughのいずれかを指定します。
+* textDecoStyle(String)。デコレーションのスタイルです。solid, dotted, dashed, double, wavyのいずれかを指定します。
+* textDecoColor(String)色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* textDecoThickness(double)。デコレーションの線幅をpxで指定します。
+* letterSpacing(double)。文字間の隙間をpxで指定します。
+* wordSpacing(double)。単語間の隙間をpxで指定します。
+* textAlign(String)。テキスト揃えです。left, center, right, justifyのいずれかを指定します。
+* textHeight(double)。テキストの高さを指定します。英語の場合は1.0で良いですが、日本語の場合は1.0～1.3の間で調整した方が良い場合があります。
 
 ----
 
 スーパークラス
-==============
+================
+
 :ref:`spwml`
