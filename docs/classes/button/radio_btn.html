@@ -54,31 +54,50 @@
 <h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
 <section id="id2">
 <h3>子ブロックの操作<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
-<p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親クラス</span></a> の機能</p>
+<p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親クラス</span></a> の機能。</p>
 </section>
-</section>
-<hr class="docutils" />
 <section id="id3">
-<h2>変数（Dart）<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> 変数</p></li>
-<li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親</span></a> 変数</p></li>
-<li><p>[elParams] : Flutterの <a class="reference external" href="https://api.flutter.dev/flutter/material/Radio-class.html">Radioクラス</a> の使い勝手を向上するために調整を加えた変数を持っています。</p></li>
-</ul>
-<p>現在作成中です。</p>
+<h3>初期値の設定<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<p>初期値を設定します。画面の更新時に値を保持するには、
+上位のウィジェット等で値を保持し、これを呼び出します。
+引数として与えた0から数えるインデックス番目を選択した状態になります。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setInitialIndex(int? v)
+</pre></div>
+</div>
 </section>
-<hr class="docutils" />
 <section id="id4">
-<h2>利用可能パラメータ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ</p></li>
-<li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親</span></a> パラメータ</p></li>
-</ul>
-<p>現在作成中です。</p>
+<h3>コールバックの設定<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>コールバックを設定します。
+ラジオボタンが選択された時に、そのインデックスが渡されます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setCallback(void Function(int? selectedIndex)? callback)
+</pre></div>
+</div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="id5">
-<h2>スーパークラス<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<h2>変数（Dart）<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> 変数。</p></li>
+<li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親</span></a> 変数。</p></li>
+<li><p>[elParams] : Flutterの <a class="reference external" href="https://api.flutter.dev/flutter/material/Radio-class.html">Radioクラス</a> の使い勝手を向上するために調整を加えた変数を持っています。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h2>利用可能パラメータ<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ。</p></li>
+<li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親</span></a> パラメータ。</p></li>
+<li><p>iconSize (double)。アイコンの大きさをpxで指定します。</p></li>
+<li><p>iconColor (String)。色の指定です。#AARRGGBB表記、あるいは <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> の色をred[500]やredAccent[100]のような表記で扱えます。</p></li>
+<li><p>splashRadius (double)。クリックして反応する大きさを円の半径で設定します。</p></li>
+<li><p>enableTapLabel (bool)。trueの場合はテキスト側もタップに反応するようになります。初期値はfalseです。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id7">
+<h2>スーパークラス<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">MultiChildElement</span></a></p>
 </section>
 </section>

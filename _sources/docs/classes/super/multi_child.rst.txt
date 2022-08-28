@@ -26,6 +26,7 @@ Builderからの呼び出し
 ----------------------
 
 Builderの機能でreplaceUnderStructureというメソッドがあり、これを使うことで子ブロック配列をウィジェットに差し替えることができます。
+
 .. code-block:: none
    
     SpWMLBuilder builder = SpWMLBuilder("(このクラスの子クラスの型, id:1)");
@@ -36,7 +37,7 @@ Builderの機能でreplaceUnderStructureというメソッドがあり、これ�
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
+* :ref:`共通<spwml>` 変数。
 * [children] : 子ウィジェットの配列です。
 
 ----
@@ -44,7 +45,7 @@ Builderの機能でreplaceUnderStructureというメソッドがあり、これ�
 利用可能パラメータ
 ==================
 
-* :ref:`共通<spwml>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
 
 ----
 

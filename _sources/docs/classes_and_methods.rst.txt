@@ -41,6 +41,7 @@
 
 ボタン（タッチ操作に反応する要素）
 ======================================
+* :ref:`btn（様々なボタンを扱える要素）<btn>`
 * :ref:`checkbox（チェックボックス）<checkbox>`
 * :ref:`dropdownBtn（タップで現れるボタン）<dropdownBtn>`
 * :ref:`popupMenuBtn（タップでポップアップするボタン）<popupMenuBtn>`

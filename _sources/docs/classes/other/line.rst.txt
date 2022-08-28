@@ -31,7 +31,7 @@ SpWMLによる記法
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
+* :ref:`共通<spwml>` 変数。
 * [elParams] : Flutterの `Dividerクラス <https://api.flutter.dev/flutter/material/Divider-class.html>`__ 相当のパラメータを持つ変数です。
 
 ----
@@ -39,7 +39,7 @@ SpWMLによる記法
 利用可能パラメータ
 ==================
 
-* :ref:`共通<spwml>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
 * thickness (double)。線の太さをpxで指定します。
 * color (String)。線の色を指定します。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
 

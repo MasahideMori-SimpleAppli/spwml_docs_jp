@@ -81,7 +81,7 @@ SpWMLで設定されたTextAlignを取得できます。
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
+* :ref:`共通<spwml>` 変数。
 * [textParams] : FlutterのTextウィジェット、及びSelectableText相当のパラメータを持つ変数です。
 
 ----
@@ -89,7 +89,7 @@ SpWMLで設定されたTextAlignを取得できます。
 利用可能パラメータ
 ====================
 
-* :ref:`共通<spwml>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
 * isSelectable(bool)。trueの場合、テキストが選択できるようになります。menu以外では初期値はtrueです。
 * fontName(String)。利用するフォント名です。フォントの変更にはFlutterプロジェクト側で設定が必要です。プロジェクトで設定したフォントのみを読み込めます。
 * fontSize(double)。フォントサイズをpxで指定します。

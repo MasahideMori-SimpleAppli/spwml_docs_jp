@@ -67,8 +67,8 @@ SpWMLによる記法
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
-* :ref:`親<text>` 変数
+* :ref:`共通<spwml>` 変数。
+* :ref:`親<text>` 変数。
 * [tfParams] : Flutterの `TextFieldクラス <https://api.flutter.dev/flutter/material/TextField-class.html>`__ 相当のパラメータに加えて、ルビ制御用のパラメータを持つ変数です。
 
 ----
@@ -76,7 +76,7 @@ SpWMLによる記法
 利用可能パラメータ
 ====================
 
-* :ref:`共通<spwml>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
 * :ref:`親<text>` パラメータ。ただし、isSelectableは無効です。
 * labelText(String)。アニメーションで左上に移動する機能を持つヒントテキストです。
 * hint(String)。入力が空の場合に表示されるヒントテキストです。ただし、Flutterの既知の問題で、日本語で使用するとIMEの変換が壊れるバグがあるため、labelTextを使用してください。

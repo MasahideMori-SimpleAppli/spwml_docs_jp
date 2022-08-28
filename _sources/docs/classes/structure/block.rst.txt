@@ -28,23 +28,23 @@ SpWMLによる記法
 子ブロックの操作
 -----------------
 
-:ref:`親クラス<single_child>` の機能
+:ref:`親クラス<single_child>` の機能。
 
 ----
 
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
-* :ref:`親<single_child>` 変数
+* :ref:`共通<spwml>` 変数。
+* :ref:`親<single_child>` 変数。
 
 ----
 
 利用可能パラメータ
 ==================
 
-* :ref:`共通<spwml>` パラメータ
-* :ref:`親<single_child>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
+* :ref:`親<single_child>` パラメータ。
 
 ----
 

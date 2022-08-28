@@ -50,7 +50,7 @@ setSwitchValue
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
+* :ref:`共通<spwml>` 変数。
 * [elParams] : Flutterの `Switchクラス <https://api.flutter.dev/flutter/material/Switch-class.html>`__ 相当のパラメータを持つ変数です。
 
 ----
@@ -58,7 +58,7 @@ setSwitchValue
 利用可能パラメータ
 ==================
 
-* :ref:`共通<spwml>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
 * color (String, #AARRGGBB)。色の指定。
 
 ----

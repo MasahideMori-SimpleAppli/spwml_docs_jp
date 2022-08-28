@@ -30,15 +30,15 @@ SpWMLによる記法
 子ブロックの操作
 -----------------
 
-:ref:`親クラス<multi_child>` の機能
+:ref:`親クラス<multi_child>` の機能。
 
 ----
 
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
-* :ref:`親<multi_child>` 変数
+* :ref:`共通<spwml>` 変数。
+* :ref:`親<multi_child>` 変数。
 * [elParams] : FlutterのWrapクラス `Wrapクラス <https://api.flutter.dev/flutter/widgets/Wrap-class.html>`__ 相当のパラメータを持つ変数です。
 
 ----
@@ -46,8 +46,8 @@ SpWMLによる記法
 利用可能パラメータ
 ==================
 
-* :ref:`共通<spwml>` パラメータ
-* :ref:`親<multi_child>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
+* :ref:`親<multi_child>` パラメータ。
 * vAlign (String)。垂直方向の揃えです。left、start、center、right、end、top、bottomのいずれかを指定します。
 * hAlign (String)。水平方向の揃えです。left、start、center、right、end、top、bottomのいずれかを指定します。
 

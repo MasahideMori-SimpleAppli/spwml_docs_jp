@@ -62,8 +62,8 @@ SpWMLで設定されたルビのTextAlignを取得できます。
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
-* :ref:`親<text>` 変数
+* :ref:`共通<spwml>` 変数。
+* :ref:`親<text>` 変数。
 * [rubyParams] : Flutterの `Textクラス <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ 相当のパラメータに加えて、ルビ制御用のパラメータを持つ変数です。
 
 ----
@@ -71,8 +71,8 @@ SpWMLで設定されたルビのTextAlignを取得できます。
 利用可能パラメータ
 ====================
 
-* :ref:`共通<spwml>` パラメータ
-* :ref:`親<text>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
+* :ref:`親<text>` パラメータ。
 * rubyFontName(String)。利用するフォント名です。フォントの変更にはFlutterプロジェクト側で設定が必要です。プロジェクトで設定したフォントのみを読み込めます。
 * rubySize(double)。フォントサイズを基準テキストに対する倍率で指定します。0.0～1.0の値を使用してください。
 * rubyFontWeight(String)。フォントの太さです。normal, regular, bold, thin, light, medium, black, w100～w900のいずれかを指定します。

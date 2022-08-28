@@ -30,7 +30,7 @@ SpWMLによる記法
 子ブロックの操作
 -----------------
 
-:ref:`親クラス<multi_child_text>` の機能
+:ref:`親クラス<multi_child_text>` の機能。
 ただし、差し替えられるのはInlineSpanを実装したウィジェットのみです。これにはTextSpanやWidgetSpanなどがあります。
 
 ----
@@ -38,8 +38,8 @@ SpWMLによる記法
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
-* :ref:`親<multi_child_text>` 変数
+* :ref:`共通<spwml>` 変数。
+* :ref:`親<multi_child_text>` 変数。
 * [elParams] : Flutterの `TextSpanクラス <https://api.flutter.dev/flutter/painting/TextSpan-class.html>`__ 相当のパラメータを持つ変数です。
 
 ----
@@ -47,8 +47,8 @@ SpWMLによる記法
 利用可能パラメータ
 ==================
 
-* :ref:`共通<spwml>` パラメータ
-* :ref:`親<multi_child_text>` パラメータ
+* :ref:`共通<spwml>` パラメータ。
+* :ref:`親<multi_child_text>` パラメータ。
 * isSelectable (bool)。内部のテキストを選択出来るかどうかの指定です。
 
 ----

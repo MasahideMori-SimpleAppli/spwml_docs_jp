@@ -30,15 +30,37 @@ SpWMLによる記法
 子ブロックの操作
 -----------------
 
-:ref:`親クラス<multi_child>` の機能
+:ref:`親クラス<multi_child>` の機能。
+
+初期値の設定
+-------------------
+
+初期値を設定します。画面の更新時に値を保持するには、
+上位のウィジェット等で値を保持し、これを呼び出します。
+引数として与えた0から数えるインデックス番目を選択した状態になります。
+
+.. code-block:: none
+   
+   setInitialIndex(int? index)
+
+コールバックの設定
+-------------------
+
+コールバックを設定します。
+ドロップダウンが選択された時に、そのインデックスが渡されます。
+
+.. code-block:: none
+   
+   setCallback(void Function(int index)? callback)
+
 
 ----
 
 変数（Dart）
 ===============
 
-* :ref:`共通<spwml>` 変数
-* :ref:`親<multi_child>` 変数
+* :ref:`共通<spwml>` 変数。
+* :ref:`親<multi_child>` 変数。
 * [elParams] : Flutterの `DropdownButtonクラス <https://api.flutter.dev/flutter/material/DropdownButton-class.html>`__ の使い勝手を向上するために調整を加えた変数を持っています。
 
 ----
@@ -46,10 +68,15 @@ SpWMLによる記法
 利用可能パラメータ
 ==================
 
-* :ref:`共通<spwml>` パラメータ
-* :ref:`親<multi_child>` パラメータ
-
-現在作成中です。
+* :ref:`共通<spwml>` パラメータ。
+* :ref:`親<multi_child>` パラメータ。
+* hint (String)。未選択時のヒントテキストを設定します。
+* iconNum (String)。アイコンの種類を `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ で指定します。
+* iconSize (double)。アイコンの大きさをpxで指定します。
+* iconColor (String)。色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* splashRadius (double)。クリックして反応する大きさを円の半径で設定します。
+* underlineColor (String)。下線の色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* underlineHeight (double)。下線の幅をpxで指定します。
 
 ----
 
