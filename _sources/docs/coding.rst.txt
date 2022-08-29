@@ -16,11 +16,12 @@ https://pub.dev/packages/simple_widget_markup/example
    BtnElement btnElement = builder.getElementByID(1) as BtnElement;
 
 のように取得することができます。
-「BtnElement」の部分は、何を取得するのかで変わります。
-基本的に「SpWMLの型名+Element」という名前のクラスがあるので、それを入力すれば良いです。
-各クラスは、以下のようにFlutterの同様なクラスとほぼ同じパラメータを持っており、クラスパラメータを書き換えることで、
+どのような型があり、それぞれどんなパラメータを持っているかについては :ref:`「クラスと機能」<classes_and_methods>` を参照してください。
+「BtnElement」の部分は何を取得するのかで変わります。これも各型の詳細ページに記載があります。
+基本的には一部の省略系の表記を除いて「SpWMLの型名+Element」という名前のクラスになっています。
+
+また、各クラスはFlutterの同様なクラスとほぼ同じパラメータを持っており、以下のようにクラスパラメータを書き換えることで、
 コードからほぼ全てをコントロール出来るようになっています。
-どのようなパラメータを持っているかについてはこのホームページの :ref:`「クラスと機能」<classes_and_methods>` を参照してください。
 
 .. code-block:: none
    

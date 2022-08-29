@@ -47,11 +47,11 @@
 </pre></div>
 </div>
 <p>のように取得することができます。
-「BtnElement」の部分は、何を取得するのかで変わります。
-基本的に「SpWMLの型名+Element」という名前のクラスがあるので、それを入力すれば良いです。
-各クラスは、以下のようにFlutterの同様なクラスとほぼ同じパラメータを持っており、クラスパラメータを書き換えることで、
-コードからほぼ全てをコントロール出来るようになっています。
-どのようなパラメータを持っているかについてはこのホームページの <a class="reference internal" href="classes_and_methods.html#classes-and-methods"><span class="std std-ref">「クラスと機能」</span></a> を参照してください。</p>
+どのような型があり、それぞれどんなパラメータを持っているかについては <a class="reference internal" href="classes_and_methods.html#classes-and-methods"><span class="std std-ref">「クラスと機能」</span></a> を参照してください。
+「BtnElement」の部分は何を取得するのかで変わります。これも各型の詳細ページに記載があります。
+基本的には一部の省略系の表記を除いて「SpWMLの型名+Element」という名前のクラスになっています。</p>
+<p>また、各クラスはFlutterの同様なクラスとほぼ同じパラメータを持っており、以下のようにクラスパラメータを書き換えることで、
+コードからほぼ全てをコントロール出来るようになっています。</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BtnElement btnElement = builder.getElementByID(1) as BtnElement;
 runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
 runBtn.textParams.p.isSelectable = true;

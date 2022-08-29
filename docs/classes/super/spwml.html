@@ -68,41 +68,41 @@
 <h2>利用可能パラメータ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>id(int)。intで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。</p></li>
-<li><p>h(double, px)。heightとも書けます。この要素の高さです。</p></li>
-<li><p>w(double, px)。widthとも書けます。この要素の幅です。</p></li>
+<li><p>h(double)。heightとも書けます。px指定の、この要素の高さです。</p></li>
+<li><p>w(double)。widthとも書けます。px指定の、この要素の幅です。</p></li>
 <li><p>weight(double)。画面におけるこの要素の比です。他の要素が比を持たない場合、これを持つ要素が残りの幅全てを占めます。</p></li>
-<li><p>minH (double, px)。minHeightとも書けます。最小高さです。条件によっては無視されます。</p></li>
-<li><p>minW (double, px)。minWidthとも書けます。最小幅です。条件によっては無視されます。</p></li>
-<li><p>maxH (double, px)。maxHeightとも書けます。最大高さです。条件によっては無視されます。</p></li>
-<li><p>maxW (double, px)。maxWidthとも書けます。最大幅です。条件によっては無視されます。</p></li>
-<li><p>mL (double, px)。mLeftとも書けます。左マージンです。</p></li>
-<li><p>mT (double, px)。mTopとも書けます。上マージンです。</p></li>
-<li><p>mR (double, px)。mRightとも書けます。右マージンです。</p></li>
-<li><p>mB (double, px)。mBottomとも書けます。下マージンです。</p></li>
-<li><p>pL (double, px)。pLeftとも書けます。左パディングです。</p></li>
-<li><p>pT (double, px)。pTopとも書けます。上パディングです。</p></li>
-<li><p>pR (double, px)。pRightとも書けます。右パディングです。</p></li>
-<li><p>pB (double, px)。pBottomとも書けます。下パディングです。</p></li>
-<li><p>shiftX (double, px)。要素のx軸の相対位置をずらします。</p></li>
-<li><p>shiftY (double, px)。要素のy軸の相対位置をずらします。</p></li>
-<li><p>elevation (double, px)。要素のz軸の相対位置をずらします。</p></li>
-<li><p>bgColor (String, #AARRGGBB)。背景色です。</p></li>
-<li><p>borderColor (String, #AARRGGBB)。ボーダーラインのカラーです。</p></li>
-<li><p>borderWidth (double, px)。ボーダーラインの幅です。</p></li>
-<li><p>borderRadius (double, px)。ボーダーの丸め量です。</p></li>
+<li><p>minH (double)。minHeightとも書けます。px指定の、最小高さです。条件によっては無視されます。</p></li>
+<li><p>minW (double)。minWidthとも書けます。px指定の、最小幅です。条件によっては無視されます。</p></li>
+<li><p>maxH (double)。maxHeightとも書けます。px指定の、最大高さです。条件によっては無視されます。</p></li>
+<li><p>maxW (double)。maxWidthとも書けます。px指定の、最大幅です。条件によっては無視されます。</p></li>
+<li><p>mL (double)。mLeftとも書けます。px指定の、左マージンです。</p></li>
+<li><p>mT (double)。mTopとも書けます。px指定の、上マージンです。</p></li>
+<li><p>mR (double)。mRightとも書けます。px指定の、右マージンです。</p></li>
+<li><p>mB (double)。mBottomとも書けます。px指定の、下マージンです。</p></li>
+<li><p>pL (double)。pLeftとも書けます。px指定の、左パディングです。</p></li>
+<li><p>pT (double)。pTopとも書けます。px指定の、上パディングです。</p></li>
+<li><p>pR (double)。pRightとも書けます。px指定の、右パディングです。</p></li>
+<li><p>pB (double)。pBottomとも書けます。px指定の、下パディングです。</p></li>
+<li><p>shiftX (double)。要素のx軸の相対位置をずらします。</p></li>
+<li><p>shiftY (double)。要素のy軸の相対位置をずらします。</p></li>
+<li><p>elevation (double)。要素のz軸の相対位置をずらします。</p></li>
+<li><p>bgColor (String)。背景色の指定です。#AARRGGBB表記、あるいは <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> の色をred[500]やredAccent[100]のような表記で扱えます。</p></li>
+<li><p>borderColor (String)。ボーダーラインの色の指定です。#AARRGGBB表記、あるいは <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> の色をred[500]やredAccent[100]のような表記で扱えます。</p></li>
+<li><p>borderWidth (double)。px指定の、ボーダーラインの幅です。</p></li>
+<li><p>borderRadius (double)。px指定の、ボーダーの丸め量です。</p></li>
 <li><p>borderShape (String)。ボーダーの形状です。rectangle、またはcircleを指定します。btn、card、radioBtn、checkbox、table、tableRowでは無効です。</p></li>
-<li><p>rTL (double, px)。左上のボーダーの丸め量です。</p></li>
-<li><p>rTR (double, px)。右上のボーダーの丸め量です。</p></li>
-<li><p>rBL (double, px)。左下のボーダーの丸め量です。</p></li>
-<li><p>rBR (double, px)。右下のボーダーの丸め量です。</p></li>
-<li><p>ellipticalX (double, px)。x軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p></li>
-<li><p>ellipticalY (double, px)。y軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p></li>
+<li><p>rTL (double)。px指定の、左上のボーダーの丸め量です。</p></li>
+<li><p>rTR (double)。px指定の、右上のボーダーの丸め量です。</p></li>
+<li><p>rBL (double)。px指定の、左下のボーダーの丸め量です。</p></li>
+<li><p>rBR (double)。px指定の、右下のボーダーの丸め量です。</p></li>
+<li><p>ellipticalX (double)。px指定の、x軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p></li>
+<li><p>ellipticalY (double)。px指定の、y軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。</p></li>
 </ul>
 </section>
 <hr class="docutils" />
 <section id="id5">
 <h2>親クラス<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
-<p>StatelessWidget(Flutterのクラスです)</p>
+<p><a class="reference external" href="https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html">StatelessWidget(Flutterのクラスです)</a></p>
 </section>
 </section>
 
