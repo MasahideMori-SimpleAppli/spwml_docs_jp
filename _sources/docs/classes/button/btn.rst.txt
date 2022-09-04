@@ -61,8 +61,9 @@ SpWMLによる記法
 * iconSize (double)。アイコンの大きさをpxで指定します。
 * iconColor (String)。色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
 * splashRadius (double)。クリックして反応する大きさを円の半径で設定します。
+* fgColor (String)。前景色の指定です。ボタンをタップした時のオーバーレイの色が変化します。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
 * btnBGColor (String)。背景色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
-* color (String)。色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* color (String)。btnBGColorと同様の効果です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
 * shape (String)。ボーダーの形状です。roundRect、stadium、bevel、circleのいずれかを指定します。
 
 ----
