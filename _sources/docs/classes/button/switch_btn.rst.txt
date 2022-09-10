@@ -59,7 +59,8 @@ setSwitchValue
 ==================
 
 * :ref:`共通<spwml>` パラメータ。
-* color (String, #AARRGGBB)。色の指定。
+* color (String)。色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+
 
 ----
 
