@@ -47,8 +47,8 @@ SpWMLによる記法
 
 * :ref:`共通<spwml>` パラメータ。
 * :ref:`親<single_child>` パラメータ。
-* color (String, #AARRGGBB)。カードの色です。
-* cardElevation (double, px)。カードの浮き具合です。
+* color (String)。カードの色です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* cardElevation (double)。カードの浮き具合です。pxで指定します。
 * shape (String)。ボーダーの形状です。roundRect、stadium、bevel、circleのいずれかを指定します。
 
 ----

@@ -48,9 +48,9 @@ SpWMLによる記法
 
 * :ref:`共通<spwml>` パラメータ。
 * :ref:`親<multi_child_text>` パラメータ。
-* iconNum (String)。 `マテリアルアイコンの 16 進数のアイコンナンバー <https://api.flutter.dev/flutter/material/Icons-class.html#constants>`__ です。
+* iconNum (String)。 アイコンの種類を `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ で指定します。
 * iconSize (String)。アイコンのサイズです。iconNumが有効な場合のみ機能します。
-* iconColor (String, #AARRGGBB)。アイコンのカラーです。iconNumが有効な場合のみ機能します。
+* iconColor (String)。アイコンのカラーです。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
 
 ----
 

@@ -39,7 +39,6 @@ SpWMLによる記法
 
 * :ref:`共通<spwml>` 変数。
 * :ref:`親<multi_child>` 変数。
-* [children] : 複数の子ウィジェットです。
 * [elParams] : Flutterの `Rowクラス <https://api.flutter.dev/flutter/widgets/Row-class.html>`__ 相当のパラメータを持つ変数です。
 
 ----

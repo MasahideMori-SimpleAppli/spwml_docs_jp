@@ -82,7 +82,7 @@ SpWMLで設定されたTextAlignを取得できます。
 ===============
 
 * :ref:`共通<spwml>` 変数。
-* [textParams] : FlutterのTextウィジェット、及びSelectableText相当のパラメータを持つ変数です。
+* [textParams] : Flutterの `Text class <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ 、及び `SelectableText class <https://api.flutter.dev/flutter/material/SelectableText-class.html>`__ 相当のパラメータを持つ変数です.
 
 ----
 
