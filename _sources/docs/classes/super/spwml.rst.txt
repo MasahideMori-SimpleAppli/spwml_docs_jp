@@ -22,7 +22,26 @@ SpWMLによる記法
 機能（Dart）
 ===============
 
-外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。
+Builderからの呼び出し
+----------------------
+
+SpWMLBuilderの機能でgetElementByIDというメソッドがあり、これを使うことで要素を取得できます。
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(text, id:1)abcde");
+    TextElement text = builder.getElementByID(1) as TextElement;
+
+
+Builderからの呼び出し2
+----------------------
+
+SpWMLBuilderの機能でgetElementBySIDというメソッドがあり、これを使うことで要素を取得できます。
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(text, sid:aaa)abcde");
+    TextElement text = builder.getElementBySID("aaa") as TextElement;
 
 ----
 
@@ -44,6 +63,7 @@ SpWMLによる記法
 ==================
 
 * id(int)。intで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。
+* sid(String)。Stringで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。
 * h(double)。heightとも書けます。px指定の、この要素の高さです。
 * w(double)。widthとも書けます。px指定の、この要素の幅です。
 * weight(double)。画面におけるこの要素の比です。他の要素が比を持たない場合、これを持つ要素が残りの幅全てを占めます。

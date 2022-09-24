@@ -47,7 +47,22 @@
 <hr class="docutils" />
 <section id="dart">
 <h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
-<p>外部から利用するものはありません。内部的に使用されるメソッドのみを持ちます。</p>
+<section id="builder">
+<h3>Builderからの呼び出し<a class="headerlink" href="#builder" title="Permalink to this heading">¶</a></h3>
+<p>SpWMLBuilderの機能でgetElementByIDというメソッドがあり、これを使うことで要素を取得できます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(text, id:1)abcde&quot;);
+TextElement text = builder.getElementByID(1) as TextElement;
+</pre></div>
+</div>
+</section>
+<section id="builder2">
+<h3>Builderからの呼び出し2<a class="headerlink" href="#builder2" title="Permalink to this heading">¶</a></h3>
+<p>SpWMLBuilderの機能でgetElementBySIDというメソッドがあり、これを使うことで要素を取得できます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(text, sid:aaa)abcde&quot;);
+TextElement text = builder.getElementBySID(&quot;aaa&quot;) as TextElement;
+</pre></div>
+</div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="id3">
@@ -68,6 +83,7 @@
 <h2>利用可能パラメータ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>id(int)。intで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。</p></li>
+<li><p>sid(String)。Stringで指定するIDです。ボタンコールバックの指定や、子要素の置き換えに使用します。</p></li>
 <li><p>h(double)。heightとも書けます。px指定の、この要素の高さです。</p></li>
 <li><p>w(double)。widthとも書けます。px指定の、この要素の幅です。</p></li>
 <li><p>weight(double)。画面におけるこの要素の比です。他の要素が比を持たない場合、これを持つ要素が残りの幅全てを占めます。</p></li>

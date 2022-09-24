@@ -25,12 +25,24 @@ SpWMLによる記法
 Builderからの呼び出し
 ----------------------
 
-Builderの機能でreplaceUnderStructureというメソッドがあり、これを使うことで子ブロック配列をウィジェットに差し替えることができます。
+SpWMLBuilderの機能でreplaceUnderStructureというメソッドがあり、これを使うことで子ブロック配列をウィジェットに差し替えることができます。
 
 .. code-block:: none
    
     SpWMLBuilder builder = SpWMLBuilder("(このクラスの子クラスの型, id:1)");
     builder.replaceUnderStructure(1, [Text("abc"), Text("def")]);
+
+
+Builderからの呼び出し2
+----------------------
+
+SpWMLBuilderの機能でreplaceUnderStructureSIDというメソッドがあり、これを使うことで子ブロック配列をウィジェットに差し替えることができます。
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(このクラスの子クラスの型, sid:aaa)");
+    builder.replaceUnderStructureSID("aaa", [Text("abc"), Text("def")]);
+    
 
 ----
 

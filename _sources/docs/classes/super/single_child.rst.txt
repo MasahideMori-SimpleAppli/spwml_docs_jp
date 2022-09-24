@@ -25,12 +25,24 @@ SpWMLによる記法
 Builderからの呼び出し
 ----------------------
 
-Builderの機能でreplaceIDというメソッドがあり、これを使うことで子ブロックをウィジェットに差し替えることができます。
+SpWMLBuilderの機能でreplaceIDというメソッドがあり、これを使うことで子ブロックをウィジェットに差し替えることができます。
 
 .. code-block:: none
    
     SpWMLBuilder builder = SpWMLBuilder("(このクラスの子クラスの型, id:1)");
     builder.replaceID(1, Text("abc"));
+
+
+Builderからの呼び出し2
+-----------------------
+
+SpWMLBuilderの機能でreplaceSIDというメソッドがあり、これを使うことで子ブロックをウィジェットに差し替えることができます。
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(このクラスの子クラスの型, sid:aaa)");
+    builder.replaceSID("aaa", Text("abc"));
+
 
 ----
 
