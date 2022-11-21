@@ -93,6 +93,7 @@ SpWMLBuilderの機能でgetElementBySIDというメソッドがあり、これ�
 * rBR (double)。px指定の、右下のボーダーの丸め量です。
 * ellipticalX (double)。px指定の、x軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。
 * ellipticalY (double)。px指定の、y軸方向の丸め量です。ellipticalXとellipticalYは両方同時に設定する必要があります。
+* isGone (bool)。trueの場合はこのブロックが表示されなくなります。初期値はfalseです。
 
 ----
 

@@ -89,6 +89,10 @@ SpWMLによる記法
 * suffixIconSize(double)。末尾アイコンの大きさをpxで指定します。
 * suffixIconSplashRadius(double)。末尾アイコンのタップに対するアニメーション領域の大きさをpxで指定します。
 * suffixIconColor(String)。末尾アイコンの色の指定です。#AARRGGBB表記、あるいは `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ の色をred[500]やredAccent[100]のような表記で扱えます。
+* cpL (double)。左方向のコンテンツパディングです。
+* cpT (double)。上方向のコンテンツパディングです。
+* cpR (double)。右方向のコンテンツパディングです。
+* cpB (double)。下方向のコンテンツパディングです。
 
 ----
 

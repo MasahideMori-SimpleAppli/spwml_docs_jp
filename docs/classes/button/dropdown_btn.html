@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>DropdownBtnElement &#8212; SpWML Docs  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
@@ -14,6 +14,7 @@
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/translations.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="検索" href="../../../search.html" />
@@ -34,9 +35,9 @@
           <div class="body" role="main">
             
   <section id="dropdownbtnelement">
-<span id="dropdownbtn"></span><h1>DropdownBtnElement<a class="headerlink" href="#dropdownbtnelement" title="Permalink to this heading">¶</a></h1>
+<span id="dropdownbtn"></span><h1>DropdownBtnElement<a class="headerlink" href="#dropdownbtnelement" title="この見出しへのパーマリンク">¶</a></h1>
 <section id="spwml">
-<h2>SpWMLによる記法<a class="headerlink" href="#spwml" title="Permalink to this heading">¶</a></h2>
+<h2>SpWMLによる記法<a class="headerlink" href="#spwml" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(dropdownBtn)
 +(menu)選択肢1
 +(menu)選択肢2
@@ -46,18 +47,18 @@
 </section>
 <hr class="docutils" />
 <section id="id1">
-<h2>解説<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<h2>解説<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h2>
 <p>ドロップダウンボタンを作成できるブロックです。</p>
 </section>
 <hr class="docutils" />
 <section id="dart">
-<h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
+<h2>機能（Dart）<a class="headerlink" href="#dart" title="この見出しへのパーマリンク">¶</a></h2>
 <section id="id2">
-<h3>子ブロックの操作<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<h3>子ブロックの操作<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h3>
 <p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親クラス</span></a> の機能。</p>
 </section>
 <section id="id3">
-<h3>初期値の設定<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<h3>初期値の設定<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h3>
 <p>初期値を設定します。画面の更新時に値を保持するには、
 上位のウィジェット等で値を保持し、これを呼び出します。
 引数として与えた0から数えるインデックス番目を選択した状態になります。</p>
@@ -66,7 +67,7 @@
 </div>
 </section>
 <section id="id4">
-<h3>コールバックの設定<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<h3>コールバックの設定<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h3>
 <p>コールバックを設定します。
 ドロップダウンが選択された時に、そのインデックスが渡されます。</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>setCallback(void Function(int index)? callback)
@@ -76,7 +77,7 @@
 </section>
 <hr class="docutils" />
 <section id="id5">
-<h2>変数（Dart）<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<h2>変数（Dart）<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> 変数。</p></li>
 <li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親</span></a> 変数。</p></li>
@@ -85,7 +86,7 @@
 </section>
 <hr class="docutils" />
 <section id="id6">
-<h2>利用可能パラメータ<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<h2>利用可能パラメータ<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ。</p></li>
 <li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">親</span></a> パラメータ。</p></li>
@@ -100,7 +101,7 @@
 </section>
 <hr class="docutils" />
 <section id="id7">
-<h2>スーパークラス<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<h2>スーパークラス<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">¶</a></h2>
 <p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">MultiChildElement</span></a></p>
 </section>
 </section>
@@ -165,7 +166,7 @@
       &copy;2022, Masahide Mori.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

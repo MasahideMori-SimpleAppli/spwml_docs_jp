@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>TextFieldElement &#8212; SpWML Docs  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
@@ -14,6 +14,7 @@
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/translations.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="検索" href="../../../search.html" />
@@ -34,9 +35,9 @@
           <div class="body" role="main">
             
   <section id="textfieldelement">
-<span id="textfield"></span><h1>TextFieldElement<a class="headerlink" href="#textfieldelement" title="Permalink to this heading">¶</a></h1>
+<span id="textfield"></span><h1>TextFieldElement<a class="headerlink" href="#textfieldelement" title="この見出しへのパーマリンク">¶</a></h1>
 <section id="spwml">
-<h2>SpWMLによる記法<a class="headerlink" href="#spwml" title="Permalink to this heading">¶</a></h2>
+<h2>SpWMLによる記法<a class="headerlink" href="#spwml" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(tf)
 または
 (textField)
@@ -45,21 +46,21 @@
 </section>
 <hr class="docutils" />
 <section id="id1">
-<h2>解説<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<h2>解説<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h2>
 <p>子ブロックを持たない、テキスト入力を設置できるブロックです。</p>
 </section>
 <hr class="docutils" />
 <section id="dart">
-<h2>機能（Dart）<a class="headerlink" href="#dart" title="Permalink to this heading">¶</a></h2>
+<h2>機能（Dart）<a class="headerlink" href="#dart" title="この見出しへのパーマリンク">¶</a></h2>
 <section id="id2">
-<h3>サーチアイコンのコールバック<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<h3>サーチアイコンのコールバック<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h3>
 <p>入力がsearchモードの場合のボタンコールバックを設定します。</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setSuffixCallback(Function(String inputText)? suffixCallback)
 </pre></div>
 </div>
 </section>
 <section id="id3">
-<h3>入力完了時のコールバック<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<h3>入力完了時のコールバック<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h3>
 <p>ユーザー入力完了時のコールバックを設定します。</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setOnSubmitted(void Function(String)? onSubmitted)
 </pre></div>
@@ -78,7 +79,7 @@
 </section>
 <hr class="docutils" />
 <section id="id4">
-<h2>変数（Dart）<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<h2>変数（Dart）<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> 変数。</p></li>
 <li><p><a class="reference internal" href="text.html#text"><span class="std std-ref">親</span></a> 変数。</p></li>
@@ -87,7 +88,7 @@
 </section>
 <hr class="docutils" />
 <section id="id5">
-<h2>利用可能パラメータ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<h2>利用可能パラメータ<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">共通</span></a> パラメータ。</p></li>
 <li><p><a class="reference internal" href="text.html#text"><span class="std std-ref">親</span></a> パラメータ。ただし、isSelectableは無効です。</p></li>
@@ -102,11 +103,15 @@
 <li><p>suffixIconSize(double)。末尾アイコンの大きさをpxで指定します。</p></li>
 <li><p>suffixIconSplashRadius(double)。末尾アイコンのタップに対するアニメーション領域の大きさをpxで指定します。</p></li>
 <li><p>suffixIconColor(String)。末尾アイコンの色の指定です。#AARRGGBB表記、あるいは <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> の色をred[500]やredAccent[100]のような表記で扱えます。</p></li>
+<li><p>cpL (double)。左方向のコンテンツパディングです。</p></li>
+<li><p>cpT (double)。上方向のコンテンツパディングです。</p></li>
+<li><p>cpR (double)。右方向のコンテンツパディングです。</p></li>
+<li><p>cpB (double)。下方向のコンテンツパディングです。</p></li>
 </ul>
 </section>
 <hr class="docutils" />
 <section id="id6">
-<h2>スーパークラス<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<h2>スーパークラス<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">¶</a></h2>
 <p><a class="reference internal" href="text.html#text"><span class="std std-ref">TextElement</span></a></p>
 </section>
 </section>
@@ -171,7 +176,7 @@
       &copy;2022, Masahide Mori.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
