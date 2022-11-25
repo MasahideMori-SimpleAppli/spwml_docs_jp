@@ -11,14 +11,14 @@ https://simple-widget-markup-editor.web.app/
 
 SpWMLの記法について
 ====================
-SpWMLは、以下の `Simple Block Markup Laungage(SBML) <https://github.com/MasahideMori-SimpleAppli/simple_block_markup_language/blob/main/README_JA.md>`__ の派生形としての構造を持ちます。
+SpWMLは、以下の `Simple Block Markup Laungage(SpBML) <https://github.com/MasahideMori-SimpleAppli/simple_block_markup_language/blob/main/README_JA.md>`__ の派生形としての構造を持ちます。
 
 .. code-block:: none
    
    (型, パラメータ1:値1, パラメータ2:値2,...)コンテンツテキスト
 
-SBMLがXMLとするとSpWMLはHTMLのようなもので、SBMLの方がより自由度が高い言語です。
-書き方についてはSBMLと同様で、型名などにtextやh1など、HTMLに近いものが事前に定義してあります。
+SpBMLがXMLとするとSpWMLはHTMLのようなもので、SpBMLの方がより自由度が高い言語です。
+書き方についてはSpBMLと同様で、型名などにtextやh1など、HTMLに近いものが事前に定義してあります。
 
 例えばヘッダー1の大きさでテキストを記述したい場合、以下のようにします。
 

@@ -50,7 +50,7 @@ SpWMLBuilderの機能でgetElementBySIDというメソッドがあり、これ�
 
 * [serial] : 配列番号。
 * [type] : 型。
-* [param] : SBMLによってパースされた後、Flutter用に変換されたパラメータ。
+* [param] : SpBMLによってパースされた後、Flutter用に変換されたパラメータ。
 * [spwmlParams] : SpWMLでユーザーが記述したパラメータ。
 * [parentSerial] : 親ブロックの配列番号。
 * [lineStart] : このブロックの開始行番号。
