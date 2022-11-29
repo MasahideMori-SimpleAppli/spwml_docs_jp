@@ -35,6 +35,17 @@ SpWMLによる記法
    
    void setSuffixCallback(Function(String inputText)? suffixCallback)
 
+
+テキスト変更時のコールバック
+----------------------------
+
+ユーザーがテキストを変更した時のコールバックを設定します。
+
+.. code-block:: none
+   
+   void setOnChanged(void Function(String)? onChanged)
+
+
 入力完了時のコールバック
 ----------------------------
 
