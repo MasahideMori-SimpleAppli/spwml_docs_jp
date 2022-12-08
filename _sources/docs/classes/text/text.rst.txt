@@ -46,8 +46,7 @@ SpWMLによる記法
 
 .. code-block:: none
    
-    SpWMLBuilder builder = SpWMLBuilder("(このクラスの子クラスの型, id:1)");
-    builder.replaceID(1, Text("abc"));
+   setText(String newText)
 
 Styleの取得
 --------------------
