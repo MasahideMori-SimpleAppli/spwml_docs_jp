@@ -73,6 +73,24 @@ SpWMLによる記法
    
    void setFocusNode(FocusNode? focusNode)
 
+----------------------------
+
+
+編集可否のフラグを設定します。
+
+.. code-block:: none
+   
+   void setEnabled(bool enabled)
+
+----------------------------
+
+
+コントローラとフォーカスをtextfield_managerを使って一括で設定します。
+
+.. code-block:: none
+   
+   void setManager(TextFieldManager manager, String name,{String? initialText})
+
 ----
 
 変数（Dart）
