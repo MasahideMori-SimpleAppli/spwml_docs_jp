@@ -43,6 +43,16 @@ SpWMLBuilderの機能でgetElementBySIDというメソッドがあり、これ�
     SpWMLBuilder builder = SpWMLBuilder("(text, sid:aaa)abcde");
     TextElement text = builder.getElementBySID("aaa") as TextElement;
 
+
+可視化フラグの設定
+----------------------
+
+isGone が true に設定されている場合、ビルド結果からこの要素を削除します。
+
+.. code-block:: none
+   
+    void setIsGone(bool isGone)
+
 ----
 
 変数（Dart）

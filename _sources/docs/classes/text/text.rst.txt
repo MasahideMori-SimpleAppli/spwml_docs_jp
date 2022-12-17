@@ -104,6 +104,8 @@ SpWMLで設定されたTextAlignを取得できます。
 * wordSpacing(double)。単語間の隙間をpxで指定します。
 * textAlign(String)。テキスト揃えです。left, center, right, justifyのいずれかを指定します。
 * textHeight(double)。テキストの高さを指定します。英語の場合は1.0で良いですが、日本語の場合は1.0～1.3の間で調整した方が良い場合があります。
+* overflow(String)。 テキストのはみ出し設定です。 clip, ellipsis, fade, visibleのいずれかを指定します。 このパラメーターは、isSelectable が false の場合にのみ有効です。
+* maxLines(int)。 描画時に許容されるテキストの最大行数。
 
 ----
 
