@@ -20,14 +20,31 @@ https://pub.dev/packages/simple_widget_markup/example
 「BtnElement」の部分は何を取得するのかで変わります。これも各型の詳細ページに記載があります。
 基本的には一部の省略系の表記を除いて「SpWMLの型名+Element」という名前のクラスになっています。
 
-また、各クラスはFlutterの同様なクラスとほぼ同じパラメータを持っており、以下のようにクラスパラメータを書き換えることで、
+また、バージョン10.1.0から導入されたsidパラメータを利用すると、より分かりやすいコードが書けます。
+
+.. code-block:: none
+   
+   BtnElement delBtn = builder.getElementBySID("削除ボタン") as BtnElement;
+
+SpWML上で設定したsidを使って呼び出せるので、こちらの方が保守性が高くおススメです。
+
+各クラスはFlutterの同様なクラスとほぼ同じパラメータを持っており、以下のようにクラスパラメータを書き換えることで、
 コードからほぼ全てをコントロール出来るようになっています。
 
 .. code-block:: none
    
-   BtnElement btnElement = builder.getElementByID(1) as BtnElement;
+   BtnElement runBtn = builder.getElementBySID("実行ボタン") as BtnElement;
    runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
    runBtn.textParams.p.isSelectable = true;
+
+パラメータの種類は色々ありますが、どれも○○Paramsという名前になっており、
+基本的にはそのクラスで使用するものがelParamsという名前で定義されています。
+例外はテキスト系で、textParamsやtfParams、rubyParamsなどがあります。
+全てのエレメントに共通のパラメータはspwmlParamsです。
+paramsについては内部で使用するパラメータなのでアクセスを推奨しません。
+
+その他、よく使う変数などについては、エレメントのメソッドに実装されている場合があります。
+実装があればそちらを使用してください。より安全に操作できる場合があります。
 
 ----
 
@@ -44,3 +61,4 @@ Flutterウィジェットとの連携
    Widget compiledWidget = b.build(context);
 
 既存のコードを再利用したり、静的な言語で書くのが難しい特殊な画面パーツを埋め込む場合はこのようにしてください。
+なお、replaceIDでは無くreplaceSIDを使うとsidで検索して埋め込むこともできます。

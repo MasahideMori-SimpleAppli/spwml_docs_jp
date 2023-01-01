@@ -51,13 +51,25 @@
 どのような型があり、それぞれどんなパラメータを持っているかについては <a class="reference internal" href="classes_and_methods.html#classes-and-methods"><span class="std std-ref">「クラスと機能」</span></a> を参照してください。
 「BtnElement」の部分は何を取得するのかで変わります。これも各型の詳細ページに記載があります。
 基本的には一部の省略系の表記を除いて「SpWMLの型名+Element」という名前のクラスになっています。</p>
-<p>また、各クラスはFlutterの同様なクラスとほぼ同じパラメータを持っており、以下のようにクラスパラメータを書き換えることで、
+<p>また、バージョン10.1.0から導入されたsidパラメータを利用すると、より分かりやすいコードが書けます。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BtnElement delBtn = builder.getElementBySID(&quot;削除ボタン&quot;) as BtnElement;
+</pre></div>
+</div>
+<p>SpWML上で設定したsidを使って呼び出せるので、こちらの方が保守性が高くおススメです。</p>
+<p>各クラスはFlutterの同様なクラスとほぼ同じパラメータを持っており、以下のようにクラスパラメータを書き換えることで、
 コードからほぼ全てをコントロール出来るようになっています。</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BtnElement btnElement = builder.getElementByID(1) as BtnElement;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BtnElement runBtn = builder.getElementBySID(&quot;実行ボタン&quot;) as BtnElement;
 runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
 runBtn.textParams.p.isSelectable = true;
 </pre></div>
 </div>
+<p>パラメータの種類は色々ありますが、どれも○○Paramsという名前になっており、
+基本的にはそのクラスで使用するものがelParamsという名前で定義されています。
+例外はテキスト系で、textParamsやtfParams、rubyParamsなどがあります。
+全てのエレメントに共通のパラメータはspwmlParamsです。
+paramsについては内部で使用するパラメータなのでアクセスを推奨しません。</p>
+<p>その他、よく使う変数などについては、エレメントのメソッドに実装されている場合があります。
+実装があればそちらを使用してください。より安全に操作できる場合があります。</p>
 </section>
 <hr class="docutils" />
 <section id="flutter">
@@ -69,7 +81,8 @@ b.replaceID(ここには子要素を置き換えたいblockのIDを記載しま�
 Widget compiledWidget = b.build(context);
 </pre></div>
 </div>
-<p>既存のコードを再利用したり、静的な言語で書くのが難しい特殊な画面パーツを埋め込む場合はこのようにしてください。</p>
+<p>既存のコードを再利用したり、静的な言語で書くのが難しい特殊な画面パーツを埋め込む場合はこのようにしてください。
+なお、replaceIDでは無くreplaceSIDを使うとsidで検索して埋め込むこともできます。</p>
 </section>
 </section>
 
